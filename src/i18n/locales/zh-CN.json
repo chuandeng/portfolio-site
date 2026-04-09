@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于"
+  },
+  "home": {
+    "title": "欢迎来到 Lulu 的站点",
+    "subtitle": "这是一个使用 Vue 3 + Vite 构建的个人网站",
+    "getStarted": "开始使用"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "这里是关于页面的内容"
+  },
+  "footer": {
+    "rights": "保留所有权利"
+  }
+}

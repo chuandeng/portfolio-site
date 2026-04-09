@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* 自定义基础样式 */
+body {
+  @apply antialiased;
+}
