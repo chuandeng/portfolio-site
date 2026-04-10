@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "title": "Welcome to Lulu's Site",
+    "subtitle": "A personal website built with Vue 3 + Vite",
+    "getStarted": "Get Started"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "This is the about page content"
+  },
+  "projects": {
+    "title": "Featured Projects"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

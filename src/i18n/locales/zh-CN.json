@@ -12,6 +12,13 @@
     "title": "关于我",
     "description": "这里是关于页面的内容"
   },
+  "projects": {
+    "title": "精选项目",
+    "item1-title": "Moxo AI: 企业级智能工作流编排平台",
+    "item1-desc": "Moxo AI 是构建在 Moxo 客户协作平台之上的 Agentic AI 能力体系，旨在将 AI 深度嵌入业务流程中，从“辅助工具”升级为“可执行任务的智能协作者”。",
+    "item1-title": "Moxo AI: 企业级智能工作流编排平台",
+    "item1-desc": "Moxo AI 是构建在 Moxo 客户协作平台之上的 Agentic AI 能力体系，旨在将 AI 深度嵌入业务流程中，从“辅助工具”升级为“可执行任务的智能协作者”。"
+  },
   "footer": {
     "rights": "保留所有权利"
   }

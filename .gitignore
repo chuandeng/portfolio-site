@@ -45,6 +45,11 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 
+# Auto-generated files
+src/components.d.ts
+src/auto-imports.d.ts
+.eslintrc-auto-import.json
+
 # Testing
 coverage
 

@@ -1,6 +1,50 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: rgb(71, 71, 71);
+  --color-secondary:rgb(128, 132, 157);
+  --light-gray: rgb(184, 187, 210);
+  --color-highlight: rgb(38, 103, 189);
+  --white: hsl(0, 0%, 100%);
+  --dark-gray: #474747;
+  --off-white: rgb(234, 234, 241);
+  --muted-text: rgb(128, 132, 157);
+  --accent-pink: hsl(344, 83%, 60%);
+}
+
+@font-face {
+  font-family: Solway;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/solway/v18/AMOQz46Cs2uTAOCmhXo8.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Nunito Sans;
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0RMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwd-RaLY50.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
 /* 自定义基础样式 */
 body {
   @apply antialiased;
+  font-family: "Nunito Sans", "Nunito Sans Placeholder", sans-serif;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+/* Dot Pattern Background */
+.bg-dot-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Ccircle fill='rgb(234, 234, 241)' cx='3' cy='3' r='1.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
 }
