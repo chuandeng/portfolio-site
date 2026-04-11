@@ -10,7 +10,12 @@
   },
   "about": {
     "title": "关于我",
-    "description": "这里是关于页面的内容"
+    "note1-front": "这里是关于页面的内容",
+    "note1-back": "这是关于页面的内容的背面",
+    "note2-front": "这是第二个翻转笔记的正面",
+    "note2-back": "这是第二个翻转笔记的背面",
+    "note3-front": "这是第三个翻转笔记的正面",
+    "note3-back": "这是第三个翻转笔记的背面"
   },
   "projects": {
     "title": "精选项目",
