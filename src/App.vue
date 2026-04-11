@@ -14,14 +14,14 @@ const selectedLang = ref(locale.value);
 
 watch(selectedLang, (newValue) => {
   locale.value = newValue;
-  localStorage.setItem('locale', newValue);
+  localStorage.setItem("locale", newValue);
 });
 </script>
 
 <template>
   <div class="min-h-screen flex flex-col">
     <header class="px-8">
-      <nav class="max-w-6xl mx-auto h-15 flex items-center justify-end">
+      <nav class="mx-auto h-15 flex items-center justify-end">
         <div>
           <SelectButton
             v-model="selectedLang"

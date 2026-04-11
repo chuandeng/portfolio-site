@@ -121,6 +121,11 @@ const projets = computed(() => [
 .my-description {
   font-size: 18px;
   line-height: 27px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // 响应式：屏幕小于 780px

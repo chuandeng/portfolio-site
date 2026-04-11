@@ -9,6 +9,14 @@ const props = defineProps<{
   </div>
 </template>
 <style lang="scss">
+@media (max-width: 780px) {
+  .projet-header {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
 .projet-header {
   h1 {
     font-family:
