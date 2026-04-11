@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "tag1": "Product/UX Designer",
+    "tag2": "Master's in HCI Design",
+    "tag3": "20 Years of Experience",
+    "title": "Hello, I'm Lulu",
+    "description": "I believe in \"Design is Connection\" and aspire to use the power of design to connect people together."
+  },
   "nav": {
     "home": "Home",
     "about": "About"
@@ -10,10 +17,22 @@
   },
   "about": {
     "title": "About Me",
-    "description": "This is the about page content"
+    "note1-front": "this is first flip note front",
+    "note1-back": "this is first flip note back",
+    "note2-front": "this is second flip note front",
+    "note2-back": "this is second flip note back",
+    "note3-front": "this is third flip note front",
+    "note3-back": "this is third flip note back"
   },
   "projects": {
-    "title": "Featured Projects"
+    "title": "Featured Projects",
+    "item1-title": "Moxo AI: Enterprise Intelligent Workflow Platform",
+    "item1-desc": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'.",
+    "item2-title": "Moxo AI: Enterprise Intelligent Workflow Platform",
+    "item2-desc": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'."
+  },
+  "voices": {
+    "title": "Voices from my Journey"
   },
   "footer": {
     "rights": "All rights reserved"

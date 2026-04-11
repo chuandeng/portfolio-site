@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-import Select from "primevue/select";
-import { ref } from "vue";
+import SelectButton from "primevue/selectbutton";
+import { ref, watch } from "vue";
 
-const { t, locale } = useI18n();
+const { locale } = useI18n();
 
 const languages = [
-  { label: "简体中文", value: "zh-CN" },
-  { label: "English", value: "en-US" },
+  { label: "中文", value: "zh-CN" },
+  { label: "En", value: "en-US" },
 ];
 
-const selectedLang = ref(
-  languages.find((l) => l.value === locale.value) || languages[0],
-);
+const selectedLang = ref(locale.value);
 
-function onLanguageChange(event: { value: { label: string; value: string } }) {
-  locale.value = event.value.value;
-}
+watch(selectedLang, (newValue) => {
+  locale.value = newValue;
+  localStorage.setItem('locale', newValue);
+});
 </script>
 
 <template>
@@ -24,13 +23,12 @@ function onLanguageChange(event: { value: { label: string; value: string } }) {
     <header class="px-8">
       <nav class="max-w-6xl mx-auto h-15 flex items-center justify-end">
         <div>
-          <Select
+          <SelectButton
             v-model="selectedLang"
+            size="small"
             :options="languages"
             option-label="label"
-            placeholder="Select Language"
-            class="w-36"
-            @change="onLanguageChange"
+            option-value="value"
           />
         </div>
       </nav>
@@ -40,8 +38,8 @@ function onLanguageChange(event: { value: { label: string; value: string } }) {
       <RouterView />
     </main>
 
-    <footer class="bg-gray-50 py-6 text-center text-gray-600">
-      <p>&copy; 2024 Lulu. {{ t("footer.rights") }}</p>
+    <footer class="py-6 text-center text-gray-600">
+      <p>&copy; 2026 Lulu</p>
     </footer>
   </div>
 </template>

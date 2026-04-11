@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import project1Img from "@/assets/project1.png";
 import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
 const { t } = useI18n();
 
-const projets = [
+const projets = computed(() => [
   {
     id: 1,
     title: t("projects.item1-title"),
@@ -17,7 +18,7 @@ const projets = [
     description: t("projects.item2-desc"),
     image: project1Img,
   },
-];
+]);
 </script>
 <template>
   <section
@@ -109,7 +110,9 @@ const projets = [
   position: relative;
 }
 .project-info h3 {
-  font-family: Solway, "Solway Placeholder", serif;
+  font-family:
+    Solway, "Solway Placeholder", "PingFang SC", "Microsoft YaHei",
+    "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, serif;
   color: var(--color-primary);
   font-size: 28px;
   font-weight: 700;
@@ -118,5 +121,44 @@ const projets = [
 .my-description {
   font-size: 18px;
   line-height: 27px;
+}
+
+// 响应式：屏幕小于 780px
+@media (max-width: 780px) {
+  .project-item {
+    width: 284px;
+    .projet-item-inner {
+      flex-direction: column;
+      grid-gap: 16px;
+    }
+
+    .project-item-img {
+      width: 100%;
+      height: auto;
+      padding: 16px 16px 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .project-info {
+    height: auto;
+    padding: 0 16px 16px;
+    text-align: center;
+    align-items: center;
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  .my-description {
+    display: none;
+  }
 }
 </style>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-// 组件逻辑
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 <template>
   <section class="justify-center flex flex-col items-center text-center">
@@ -7,16 +8,13 @@
     <div
       class="tags-group effects flex flex-wrap gap-8 justify-center lg:justify-start mb-4"
     >
-      <span class="hvr-grow-rotate tag-block">Product/UX Designer</span>
-      <span class="hvr-grow-rotate tag-block">Master's in HCI Design</span>
-      <span class="hvr-grow-rotate tag-block">20 Years of Experience</span>
+      <span class="hvr-grow-rotate tag-block">{{ t("hero.tag1") }}</span>
+      <span class="hvr-grow-rotate tag-block">{{ t("hero.tag2") }}</span>
+      <span class="hvr-grow-rotate tag-block">{{ t("hero.tag3") }}</span>
     </div>
     <div class="max-w-2xl">
-      <h1 class="my-info">Hello, I'm Lulu</h1>
-      <p class="my-description">
-        I believe in "Design is Connection" and aspire to use the power of
-        design to connect people together.
-      </p>
+      <h1 class="my-info">{{ t("hero.title") }}</h1>
+      <p class="my-description">{{ t("hero.description") }}</p>
     </div>
   </section>
 </template>

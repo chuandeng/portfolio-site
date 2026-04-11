@@ -11,7 +11,9 @@ const props = defineProps<{
 <style lang="scss">
 .projet-header {
   h1 {
-    font-family: "Solway", "Solway Placeholder", serif;
+    font-family:
+      "Solway", "Solway Placeholder", "PingFang SC", "Microsoft YaHei",
+      "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, serif;
     font-size: 42px;
     line-height: 50.4px;
     font-weight: 700;

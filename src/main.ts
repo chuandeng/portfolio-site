@@ -6,8 +6,10 @@ import './assets/main.css'
 
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
+import AnimateOnScroll from 'primevue/animateonscroll';
 
 const app = createApp(App)
+app.directive('animateonscroll', AnimateOnScroll);
 
 app.use(router)
 app.use(i18n)

@@ -108,9 +108,13 @@ const containerWidth = cardSize * 2 + columnGap;
 <template>
   <section class="notes-section">
     <SectionHeader :title="$t('about.title')" />
-
+    <div class="my-avatar"><img src="@/assets/lulu.png" /></div>
     <div
       class="notes-container"
+      v-animateonscroll="{
+        enterClass: 'animate-enter fade-in-10 animate-duration-1000',
+        leaveClass: 'animate-leave fade-out-0',
+      }"
       :style="{ width: `${containerWidth}px`, height: `${containerHeight}px` }"
     >
       <div
@@ -154,7 +158,15 @@ const containerWidth = cardSize * 2 + columnGap;
   height: 130px;
   transition: transform 0.3s ease;
 }
-
+.my-avatar {
+  border-radius: 100%;
+  border: 3px solid var(--color-primary);
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 .note-wrapper:hover {
   z-index: 10;
 }

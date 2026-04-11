@@ -6,4 +6,5 @@
   <HeroSection />
   <Projects />
   <AboutView />
+  <Voices />
 </template>
