@@ -1,20 +1,24 @@
 <script setup lang="ts">
 import FlipNote from "./FlipNote.vue";
-
+const colors = [
+  "rgb(184, 255, 198)",
+  "rgb(255, 163, 163)",
+  "rgb(255, 229, 163)",
+  "rgb(255, 187, 0)",
+  "rgb(205, 163, 255)",
+];
 // 生成柔和的随机颜色
+let colorIndex = -1;
 const generatePastelColor = () => {
-  const hue = Math.floor(Math.random() * 360);
-  return `hsl(${hue}, 70%, 85%)`;
-};
-
-// 生成随机旋转角度 (-20 到 20 度)
-const generateRotation = () => {
-  return (Math.random() - 0.5) * 40;
+  // const hue = Math.floor(Math.random() * 360);
+  // return `hsl(${hue}, 70%, 85%)`;
+  colorIndex++;
+  return colors[colorIndex];
 };
 
 // 生成随机左右间距 (30-50px)
 const generateColumnGap = () => {
-  return 30 + Math.random() * 20;
+  return 30 + Math.random() * 40;
 };
 
 interface Note {
@@ -22,48 +26,81 @@ interface Note {
   front: string;
   back: string;
   color: string;
-  rotation: number;
   left: number;
   top: number;
 }
 
 const cardSize = 130;
-const rowGap = 34;
-const leftColumnOffset = 50;
 const columnGap = generateColumnGap();
 
 // 生成 notes 并计算位置
 const generateNotes = (): Note[] => {
   const baseNotes = [
-    { id: 1, front: "about.note1-front", back: "about.note1-back" },
-    { id: 2, front: "about.note2-front", back: "about.note2-back" },
-    { id: 3, front: "about.note3-front", back: "about.note3-back" },
-    { id: 4, front: "about.note4-front", back: "about.note4-back" },
-    { id: 5, front: "about.note5-front", back: "about.note5-back" },
-    { id: 6, front: "about.note6-front", back: "about.note6-back" },
-  ];
-
-  return baseNotes.map((note, index) => {
-    const isLeft = index % 2 === 0;
-    const row = Math.floor(index / 2);
-    
-    const left = isLeft ? 0 : cardSize + columnGap;
-    const top = isLeft ? leftColumnOffset + row * (cardSize + rowGap) : row * (cardSize + rowGap);
-    
-    return {
-      ...note,
+    {
+      id: 1,
+      front: "about.note1-front",
+      back: "about.note1-back",
       color: generatePastelColor(),
-      rotation: generateRotation(),
-      left,
-      top,
-    };
-  });
+      left: 20,
+      top: 0,
+    },
+    {
+      id: 2,
+      front: "about.note2-front",
+      back: "about.note2-back",
+      color: generatePastelColor(),
+      left: 188,
+      top: 50,
+    },
+    {
+      id: 3,
+      front: "about.note3-front",
+      back: "about.note3-back",
+      color: generatePastelColor(),
+      left: 0,
+      top: 160,
+    },
+    {
+      id: 4,
+      front: "about.note4-front",
+      back: "about.note4-back",
+      color: generatePastelColor(),
+      left: 220,
+      top: 220,
+    },
+    {
+      id: 5,
+      front: "about.note5-front",
+      back: "about.note5-back",
+      color: generatePastelColor(),
+      left: 40,
+      top: 330,
+    },
+  ];
+  return baseNotes;
+  // return baseNotes.map((note, index) => {
+  //   const isLeft = index % 2 !== 0;
+  //   const row = Math.floor(index / 2);
+
+  //   const left = isLeft ? 0 : cardSize + columnGap;
+  //   const top = isLeft
+  //     ? row * (cardSize + rowGap)
+  //     : row * (cardSize + rowGap) + rightColumnOffset;
+
+  //   return {
+  //     ...note,
+  //     color: generatePastelColor(),
+  //     rotation: generateRotation(),
+  //     left,
+  //     top,
+  //   };
+  // });
 };
 
 const notes = generateNotes();
 
 // 计算容器高度
-const maxTop = Math.max(...notes.map(n => n.top));
+const maxTop = Math.max(...notes.map((n) => n.top));
 const containerHeight = maxTop + cardSize;
 const containerWidth = cardSize * 2 + columnGap;
 </script>
@@ -71,7 +108,11 @@ const containerWidth = cardSize * 2 + columnGap;
 <template>
   <section class="notes-section">
     <SectionHeader :title="$t('about.title')" />
-    <div class="notes-container" :style="{ width: `${containerWidth}px`, height: `${containerHeight}px` }">
+
+    <div
+      class="notes-container"
+      :style="{ width: `${containerWidth}px`, height: `${containerHeight}px` }"
+    >
       <div
         v-for="note in notes"
         :key="note.id"
@@ -79,7 +120,6 @@ const containerWidth = cardSize * 2 + columnGap;
         :style="{
           left: `${note.left}px`,
           top: `${note.top}px`,
-          transform: `rotate(${note.rotation}deg)`
         }"
       >
         <FlipNote :color="note.color">

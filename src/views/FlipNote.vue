@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { locale } = useI18n();
 
 const props = defineProps<{
   color?: string;
@@ -43,9 +46,9 @@ const onMouseLeave = () => {
 <template>
   <div
     class="flip-container"
+    :class="[locale, { 'no-shadow': hasNoShadow }]"
     @click="onMouseEnter"
     @mouseleave="onMouseLeave"
-    :class="{ 'no-shadow': hasNoShadow }"
   >
     <div class="flipper">
       <div
@@ -63,7 +66,7 @@ const onMouseLeave = () => {
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -86,9 +89,7 @@ const onMouseLeave = () => {
 .front,
 .back {
   border-radius: 3px;
-  box-shadow:
-    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   text-align: center;
 }
 
@@ -127,6 +128,12 @@ span .h3,
 
   position: relative;
 }
+.zh-CN {
+  .front,
+  .back {
+    font-size: 14px;
+  }
+}
 
 /* hide back of pane during swap */
 .front,
@@ -134,7 +141,12 @@ span .h3,
   backface-visibility: hidden;
   transition: 0.6s;
   transform-style: preserve-3d;
-
+  font-family: "Gaegu", "Noto Sans SC", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
