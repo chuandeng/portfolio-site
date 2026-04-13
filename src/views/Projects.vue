@@ -2,30 +2,40 @@
 import project1Img from "@/assets/project1.png";
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
+import router from "@/router";
 
 const { t } = useI18n();
 
 const projets = computed(() => [
   {
-    id: 1,
+    id: "project1",
     title: t("projects.item1-title"),
     description: t("projects.item1-desc"),
     image: project1Img,
   },
   {
-    id: 2,
+    id: "project2",
     title: t("projects.item2-title"),
     description: t("projects.item2-desc"),
     image: project1Img,
   },
 ]);
+const gotoProject = (id: string) => {
+  // 跳转到项目详情页
+  router.push({ path: `/${id}` });
+};
 </script>
 <template>
   <section
     class="justify-center mt-80 flex flex-col items-center text-center project-section"
   >
     <SectionHeader :title="$t('projects.title')" />
-    <div class="project-item" v-for="item in projets" :key="item.id">
+    <div
+      class="project-item"
+      v-for="item in projets"
+      :key="item.id"
+      @click="gotoProject(item.id)"
+    >
       <div class="projet-item-inner">
         <div class="project-item-img">
           <img :src="item.image" class="w-full max-w-2xl rounded-lg mb-8" />

@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +21,8 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       // 目录的别名
       directoryAsNamespace: false,
+      // 自动引入 PrimeVue 组件
+      resolvers: [PrimeVueResolver()],
     }),
     AutoImport({
       // 自动引入 Vue API
