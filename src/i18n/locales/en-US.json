@@ -26,10 +26,16 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "item1-title": "Moxo AI: Enterprise Intelligent Workflow Platform",
-    "item1-desc": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'.",
-    "item2-title": "Moxo AI: Enterprise Intelligent Workflow Platform",
-    "item2-desc": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'."
+    "project1": {
+      "title": "Designing Agentic Workflows for Human + AI Collaboration",
+      "description": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'.",
+      "titlePrefix": "Moxo AI"
+    },
+    "project2": {
+      "title": "Enterprise Intelligent Workflow Platform",
+      "description": "Moxo AI is an Agentic AI capability system built on the Moxo customer collaboration platform, designed to deeply embed AI into business processes and upgrade from 'assistant tool' to 'intelligent collaborator that executes tasks'.",
+      "titlePrefix": "Moxo AI"
+    }
   },
   "voices": {
     "title": "Voices from my Journey"

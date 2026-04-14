@@ -9,14 +9,20 @@ const { t } = useI18n();
 const projets = computed(() => [
   {
     id: "project1",
-    title: t("projects.item1-title"),
-    description: t("projects.item1-desc"),
+    title: [
+      t("projects.project1.titlePrefix"),
+      t("projects.project1.title"),
+    ].join(": "),
+    description: t("projects.project1.description"),
     image: project1Img,
   },
   {
     id: "project2",
-    title: t("projects.item2-title"),
-    description: t("projects.item2-desc"),
+    title: [
+      t("projects.project2.titlePrefix"),
+      t("projects.project2.title"),
+    ].join(": "),
+    description: t("projects.project2.description"),
     image: project1Img,
   },
 ]);
