@@ -95,6 +95,54 @@ onUnmounted(() => {
 
     <section class="glass-card bg-dot-small mt-10 normal-text">
       <div class="summary">
+        <h2>AI 如何在流程中发挥作用</h2>
+        <div>What Moxo AI Actually Does</div>
+      </div>
+      <div class="mt-10 card-container">
+        <div class="card-block">
+          <img src="@/assets/card1.png" />
+          <div class="card-body">
+            <div class="card-title">提前准备工作</div>
+            <div class="card-info">
+              AI
+              自动完成信息收集、表单预填与材料整理，使任务在到达人之前已经完整、可执行。
+            </div>
+          </div>
+        </div>
+        <div class="card-block">
+          <img src="@/assets/card2.png" />
+          <div class="card-body">
+            <div class="card-title">提前发现问题</div>
+            <div class="card-info">
+              AI
+              在提交时即时检查完整性、准确性与合规性，在问题影响流程前提前暴露。
+            </div>
+          </div>
+        </div>
+        <div class="card-block">
+          <img src="@/assets/card3.png" />
+          <div class="card-body">
+            <div class="card-title">自动流转任务</div>
+            <div class="card-info">
+              AI
+              根据角色与流程自动分配任务，触发后续步骤，确保任务始终在正确的人之间流转。
+            </div>
+          </div>
+        </div>
+        <div class="card-block">
+          <img src="@/assets/card5.png" />
+          <div class="card-body">
+            <div class="card-title">预防流程阻塞</div>
+            <div class="card-info">
+              AI 持续监控流程状态，识别风险与延迟，并主动提醒或升级处理。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
         <h2>AI Copilot</h2>
         <div>Bringing AI into the flow</div>
       </div>
@@ -170,8 +218,11 @@ onUnmounted(() => {
           <br />
           通过模块化设计，使 AI 能够在流程中被灵活编排，实现协同工作。
         </div>
-        <div class="image-container">
-          <img src="@/assets/tooling.png" alt="Tooling" />
+        <div class="video-container">
+          <video width="450" loop muted playsinline>
+            <source src="@/assets/Tooling.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
         </div>
       </div>
     </section>
@@ -195,18 +246,62 @@ onUnmounted(() => {
 
           该设计在提升效率的同时，确保流程的可靠性与安全性。
         </div>
+        <div class="video-container">
+          <video width="450" loop muted playsinline>
+            <source src="@/assets/Tooling.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>以人为核心的责任设计</h2>
+        <div>Human Accountability by Design</div>
+      </div>
+      <div class="desc-container mt-10">
+        <div class="desc-info">
+          Moxo
+          的设计基于一个简单但关键的原则：关键决策必须由人来判断，并由人承担责任。
+          AI Agent 负责推动流程，但不会取代决策者。
+          <br />
+          <div class=""></div>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .project-detail {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.card-container {
+  display: flex;
+  grid-gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .card-block {
+    flex: 1;
+    img {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+  }
+  .card-body {
+    padding: 20px 10px;
+  }
+}
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -243,6 +338,7 @@ video {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 .project-title {
   width: 100%;
