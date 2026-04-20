@@ -158,7 +158,7 @@ onUnmounted(() => {
             <li>提供清晰反馈，使 AI 行为可理解、可预期</li>
           </ul>
         </div>
-        <div class="video-container">
+        <div class="video-container width-max">
           <video width="450" loop muted playsinline>
             <source src="@/assets/ai-copilot.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
@@ -218,7 +218,7 @@ onUnmounted(() => {
           <br />
           通过模块化设计，使 AI 能够在流程中被灵活编排，实现协同工作。
         </div>
-        <div class="video-container">
+        <div class="video-container" style="margin-top: -120px">
           <video width="450" loop muted playsinline>
             <source src="@/assets/Tooling.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
@@ -246,9 +246,9 @@ onUnmounted(() => {
 
           该设计在提升效率的同时，确保流程的可靠性与安全性。
         </div>
-        <div class="video-container">
+        <div class="video-container" style="margin-top: -120px">
           <video width="450" loop muted playsinline>
-            <source src="@/assets/Tooling.mp4" type="video/mp4" />
+            <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
           </video>
         </div>
@@ -266,7 +266,303 @@ onUnmounted(() => {
           的设计基于一个简单但关键的原则：关键决策必须由人来判断，并由人承担责任。
           AI Agent 负责推动流程，但不会取代决策者。
           <br />
-          <div class=""></div>
+          <div class="mt-10 card-container">
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">人做决策</div>
+                <div class="card-info">
+                  AI 推动流程前进，但关键决策始终由人完成
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">AI 预处理行动</div>
+                <div class="card-info">
+                  所有任务在到达人之前，已完成准备、校验与整理
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">基于角色的治理机制</div>
+                <div class="card-info">
+                  AI Agent 仅在其角色权限范围内执行操作
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">效率与控制并存</div>
+                <div class="card-info">
+                  AI 提升流程效率，同时人仍对最终结果负责
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 text-xl font-bold">“AI 负责执行，人负责决策 ”</div>
+          <div class="flex m-1 mb-2">
+            <div>AI Agents（准备 / 执行 / 校验）</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <div>人类决策层</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <div>最终结果</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>AI Governance</h2>
+        <div>Al that adapts to your processes, rules, and playbooks</div>
+      </div>
+      <div class="desc-container mt-10">
+        <div class="desc-info">
+          <p>
+            Moxo AI 并不是自由运行的智能体，而是基于企业真实运作方式进行适配：
+          </p>
+          <p>包括流程、角色、权限、规则与审批逻辑。</p>
+          <p>AI 在关键决策之外推动流程执行， 但始终在既定规则与边界内运行。</p>
+          <br />
+          <div class="mt-10 card-container">
+            <div class="card-block border-box">
+              <img src="@/assets/flow_img_1.svg" class="card-icon" />
+              <div class="card-body">
+                <div class="card-title">理解业务流程</div>
+                <div class="card-info">
+                  AI 学习流程步骤、角色分工与执行规则，确保行为符合既定 playbook
+                </div>
+              </div>
+            </div>
+            <div class="card-block border-box">
+              <img src="@/assets/flow_img_2.svg" class="card-icon" />
+
+              <div class="card-body">
+                <div class="card-title">遵循规则与权限</div>
+                <div class="card-info">
+                  Agent 始终遵守权限控制、合规要求与升级路径
+                </div>
+              </div>
+            </div>
+            <div class="card-block border-box">
+              <img src="@/assets/flow_img_3.svg" class="card-icon" />
+
+              <div class="card-body">
+                <div class="card-title">知道何时执行、何时等待</div>
+                <div class="card-info">
+                  AI 自动推进标准流程，但在关键节点暂停，交由人工处理
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>系统反馈与透明性</h2>
+        <div>让 AI 行为可见、可理解</div>
+      </div>
+      <div class="desc-container mt-10">
+        <div class="desc-info">
+          AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
+          <br />
+          我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
+          <ul>
+            <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
+            <li>明确提示与下一步操作</li>
+            <li>支持多 Agent 的状态同步展示</li>
+          </ul>
+        </div>
+        <div class="video-container" style="margin-top: -120px">
+          <video width="450" loop muted playsinline>
+            <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>Live Workflow</h2>
+      </div>
+      <div class="flex flex-col mt-10">
+        <div class="desc-info">
+          AI Agent
+          与人工在同一流程中协同工作，实现任务的自动推进与关键节点的人工决策。
+          <br />
+        </div>
+        <div class="w-fit mt-10">
+          <video width="100%" loop muted playsinline>
+            <source src="@/assets/live_workflow.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>AI 驱动的业务成果</h2>
+        <div>Outcomes, Not Features</div>
+      </div>
+      <div class="desc-container mt-10">
+        <div class="desc-info">
+          Moxo
+          的设计基于一个简单但关键的原则：关键决策必须由人来判断，并由人承担责任。
+          AI Agent 负责推动流程，但不会取代决策者。
+          <br />
+          <div class="mt-10 card-container">
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">2.6x 效率提升</div>
+                <div class="card-info">
+                  流程平均完成速度提升 2.6 倍，显著缩短任务交付周期。
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">744 项流程任务自动完成</div>
+                <div class="card-info">
+                  AI Agents 累计完成 744 次任务执行，减少重复人工操作。
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">24 → 79 个活跃流程</div>
+                <div class="card-info">
+                  启用 AI 的业务流程数量增长超 3 倍，覆盖更多业务场景。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 card-container">
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">每月新增 5–10 条业务线</div>
+                <div class="card-info">
+                  通过更高效的流程响应与协作体验，持续带来新增机会。
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">42.3% 转化率</div>
+                <div class="card-info">
+                  AI 驱动的自然流程转化表现优于传统付费获客路径。
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">51K → 375K 流程处理量</div>
+                <div class="card-info">
+                  系统支撑的业务处理规模快速增长，具备良好扩展能力。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex mt-10 text-sm">
+            <div>
+              通过将重复执行交给 AI，将关键判断保留给人，Moxo AI
+              在效率、增长与可控性之间建立了可持续的业务价值模型。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>设计反思与扩展</h2>
+        <div>Designing for Human + AI Collaboration</div>
+      </div>
+      <div class="desc-container mt-10">
+        <div class="desc-info">
+          <div class="flex items-center gap-[10px] mb-[10px]">
+            <IconMiaozhun />核心收获
+          </div>
+          <div class="card-container">
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">信任是 AI 产品的核心</div>
+                <div class="card-info">
+                  用户是否采纳
+                  AI，取决于是否理解其行为，并能够在关键时刻进行控制
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">自动化必须与控制并存</div>
+                <div class="card-info">
+                  效率提升的前提，是用户始终掌握关键决策权
+                </div>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="card-body">
+                <div class="card-title">可解释性决定可用性</div>
+                <div class="card-info">
+                  只有当 AI 行为可见、可理解时，用户才会真正依赖系统
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col mt-10 text-sm gap-[10px]">
+            <div class="flex items-center gap-[10px]">
+              <IconMiaozhun />设计转变（Design Shift）
+            </div>
+            <div>
+              <ul>
+                <li>从「用户操作」到「系统协同」</li>
+                <li>从「界面设计」到「流程设计」</li>
+                <li>从「功能设计」到「规则与机制设计」</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex mt-10 text-sm flex-col gap-[10px]">
+            <div class="flex items-center gap-[10px]">
+              <IconBook />可优化方向
+            </div>
+            <div>
+              <ul>
+                <li>提供更直观的流程可视化能力</li>
+                <li>降低复杂配置的学习成本</li>
+                <li>引入更智能的默认策略，减少用户决策负担</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex mt-10 text-sm items-center justify-center">
+            <IconStart></IconStart>
+            <span>人与 AI 的协作方式，将成为下一代 UX 的核心命题</span>
+          </div>
         </div>
       </div>
     </section>
@@ -288,15 +584,24 @@ onUnmounted(() => {
     font-size: 16px;
     font-weight: 600;
   }
+  .card-info {
+    font-size: 14px;
+  }
   .card-block {
     flex: 1;
     img {
       width: 100%;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+      &.card-icon {
+        width: 60px;
+      }
     }
     border: 1px solid #b2b2b2;
     border-radius: 5px;
+    &.border-box {
+      padding: 20px;
+    }
   }
   .card-body {
     padding: 20px 10px;
@@ -332,6 +637,9 @@ p {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 450px;
   height: auto;
+  &.width-max {
+    width: 600px;
+  }
 }
 
 video {
@@ -376,5 +684,8 @@ video {
 .desc-info {
   font-size: 16px;
   font-weight: 400;
+  p {
+    margin-bottom: 10px;
+  }
 }
 </style>
