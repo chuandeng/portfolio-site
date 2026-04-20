@@ -172,7 +172,7 @@ onUnmounted(() => {
         <div>Designing a multi-agent system</div>
       </div>
       <div class="desc-container flex lg:flex-row max-lg:flex-col gap-10 mt-10">
-        <div class="desc-info">
+        <div class="desc-info min-w-3xs">
           为了支持复杂业务场景，我将 AI 能力拆解为多个具备不同职责的 Agent。
           <br />
           <br />
@@ -386,7 +386,7 @@ onUnmounted(() => {
         <div>让 AI 行为可见、可理解</div>
       </div>
       <div class="desc-container flex lg:flex-row max-lg:flex-col mt-10">
-        <div class="desc-info">
+        <div class="desc-info min-w-3xs">
           AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
           <br />
           我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
@@ -396,11 +396,8 @@ onUnmounted(() => {
             <li>支持多 Agent 的状态同步展示</li>
           </ul>
         </div>
-        <div class="video-container lg:-mt-[120px]">
-          <video width="450" loop muted playsinline>
-            <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
-            您的浏览器不支持视频播放。
-          </video>
+        <div class="image-container">
+          <img src="@/assets/response.png" />
         </div>
       </div>
     </section>
@@ -566,6 +563,31 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
+
+    <section class="glass-card bg-dot-small mt-10 normal-text">
+      <div class="summary">
+        <h2>系统反馈与透明性</h2>
+        <div>让 AI 行为可见、可理解</div>
+      </div>
+      <div class="desc-container flex lg:flex-row max-lg:flex-col mt-10">
+        <div class="desc-info">
+          AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
+          <br />
+          我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
+          <ul>
+            <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
+            <li>明确提示与下一步操作</li>
+            <li>支持多 Agent 的状态同步展示</li>
+          </ul>
+        </div>
+        <div class="video-container lg:-mt-[120px]">
+          <video width="450" loop muted playsinline>
+            <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -624,6 +646,9 @@ p {
   ul {
     list-style-type: disc;
     margin-left: 20px;
+  }
+  .desc-info {
+    font-size: 14px;
   }
   .desc-info span {
     color: var(--color-highlight);
