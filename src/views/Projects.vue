@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import project1Img from "@/assets/project1.png";
+import project2Img from "@/assets/project2_cover.png";
+import project1Img from "@/assets/project1_cover.png";
+
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 import router from "@/router";
@@ -23,7 +25,7 @@ const projets = computed(() => [
       t("projects.project2.title"),
     ].join(": "),
     description: t("projects.project2.description"),
-    image: project1Img,
+    image: project2Img,
   },
 ]);
 const gotoProject = (id: string) => {

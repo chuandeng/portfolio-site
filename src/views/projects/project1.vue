@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+import moxoAiMp4 from "@/assets/moxo-ai.mp4";
 
 let observer: IntersectionObserver | null = null;
 
@@ -43,55 +44,36 @@ onUnmounted(() => {
         <div><b>Platform: </b>Web，IOS, Android</div>
       </div>
     </section>
+    <CardSection
+      title="背景和设计目标"
+      desc="Designing for both automation and control"
+      :videoSrc="moxoAiMp4"
+    >
+      在企业协作中，业务流程分散在多个系统，<br />
+      依赖大量人工操作，效率低且缺乏一致性。<br />
+      <br />
+      尽管生成式 AI 已具备强大能力，但在实际产品中仍主要作为：<br />
+      工具，而非流程参与者。<br />
+      <br />
+      我们需要构建一套 Agentic AI Workflow System，<br />
+      让 AI 从<span>“辅助工具”</span>转变为<span>“流程执行者”</span>，<br />
+      同时确保关键决策始终由人掌控。
+    </CardSection>
 
-    <section class="glass-card bg-dot-small mt-10 normal-text">
-      <div class="summary">
-        <h2>背景和设计目标</h2>
-        <div>Designing for both automation and control</div>
-      </div>
-      <div class="flex lg:flex-row max-lg:flex-col mt-10 gap-10">
-        <div class="desc-info">
-          在企业协作中，业务流程分散在多个系统，<br />
-          依赖大量人工操作，效率低且缺乏一致性。<br />
-          <br />
-          尽管生成式 AI 已具备强大能力，但在实际产品中仍主要作为：<br />
-          工具，而非流程参与者。<br />
-          <br />
-          我们需要构建一套 Agentic AI Workflow System，<br />
-          让 AI 从<span>“辅助工具”</span>转变为<span>“流程执行者”</span>，<br />
-          同时确保关键决策始终由人掌控。
-        </div>
-        <div class="video-container">
-          <video width="450" loop muted playsinline>
-            <source src="@/assets/moxo-ai.mp4" type="video/mp4" />
-            您的浏览器不支持视频播放。
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <section class="glass-card bg-dot-small mt-10 normal-text">
-      <div class="summary">
-        <h2>机会（Opportunity）</h2>
-        <div>From AI tools to AI systems</div>
-      </div>
-      <div class="desc-container mt-10">
-        <div class="desc-info">
-          本项目的设计机会不在于增加一个 AI 功能，而在于构建一个让 AI
-          能够在流程中运作的系统。 为此，我将整体能力拆分为四个核心模块：<br />
-          <br />
-          <br />
-          <ul>
-            <li>AI Copilot：用户与 AI 的交互入口</li>
-            <li>Multi-Agent System：执行不同任务的 AI 单元</li>
-            <li>Tooling：AI 调用的实际能力</li>
-            <li>Human-in-the-Loop：保障可控性的机制</li>
-          </ul>
-          <br />
-          <img src="@/assets/opportunity.png" />
-        </div>
-      </div>
-    </section>
+    <CardSection title="机会（Opportunity）" desc="From AI tools to AI systems">
+      本项目的设计机会不在于增加一个 AI 功能，而在于构建一个让 AI
+      能够在流程中运作的系统。 为此，我将整体能力拆分为四个核心模块：<br />
+      <br />
+      <br />
+      <ul>
+        <li>AI Copilot：用户与 AI 的交互入口</li>
+        <li>Multi-Agent System：执行不同任务的 AI 单元</li>
+        <li>Tooling：AI 调用的实际能力</li>
+        <li>Human-in-the-Loop：保障可控性的机制</li>
+      </ul>
+      <br />
+      <img src="@/assets/opportunity.png" />
+    </CardSection>
 
     <section class="glass-card bg-dot-small mt-10 normal-text">
       <div class="summary">
@@ -484,7 +466,7 @@ onUnmounted(() => {
               </div>
             </div>
           </div>
-          <div class="flex mt-10 text-sm">
+          <div class="flex mt-10 text-sm items-center justify-center">
             <div>
               通过将重复执行交给 AI，将关键判断保留给人，Moxo AI
               在效率、增长与可控性之间建立了可持续的业务价值模型。
