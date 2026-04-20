@@ -49,7 +49,7 @@ onUnmounted(() => {
         <h2>背景和设计目标</h2>
         <div>Designing for both automation and control</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="flex lg:flex-row max-lg:flex-col mt-10 gap-10">
         <div class="desc-info">
           在企业协作中，业务流程分散在多个系统，<br />
           依赖大量人工操作，效率低且缺乏一致性。<br />
@@ -146,7 +146,7 @@ onUnmounted(() => {
         <h2>AI Copilot</h2>
         <div>Bringing AI into the flow</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="flex lg:flex-row max-lg:flex-col gap-10 mt-10">
         <div class="desc-info">
           AI Copilot 被设计为用户与 AI 的交互入口之一，是流程中的协作助手。
           <br />
@@ -171,7 +171,7 @@ onUnmounted(() => {
         <h2>多 Agent 系统 (Multi-Agent)</h2>
         <div>Designing a multi-agent system</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="desc-container flex lg:flex-row max-lg:flex-col gap-10 mt-10">
         <div class="desc-info">
           为了支持复杂业务场景，我将 AI 能力拆解为多个具备不同职责的 Agent。
           <br />
@@ -203,7 +203,7 @@ onUnmounted(() => {
         <h2>Tooling</h2>
         <div>Turning AI into an operator</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="desc-container flex lg:flex-row max-lg:flex-col gap-10 mt-10">
         <div class="desc-info">
           为了让 AI 能够真正“执行任务”，我设计了一套 Tooling 机制，使 Agent
           可以调用实际业务能力：
@@ -218,7 +218,7 @@ onUnmounted(() => {
           <br />
           通过模块化设计，使 AI 能够在流程中被灵活编排，实现协同工作。
         </div>
-        <div class="video-container" style="margin-top: -120px">
+        <div class="video-container lg:-mt-[120px]">
           <video width="450" loop muted playsinline>
             <source src="@/assets/Tooling.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
@@ -232,7 +232,7 @@ onUnmounted(() => {
         <h2>Human-in-the-Loop</h2>
         <div>Balancing automation with human control</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="desc-container flex lg:flex-row max-lg:flex-col mt-10">
         <div class="desc-info">
           在关键节点引入 Human-in-the-Loop 机制，使用户能够对 AI
           的行为进行干预与控制。
@@ -246,7 +246,7 @@ onUnmounted(() => {
 
           该设计在提升效率的同时，确保流程的可靠性与安全性。
         </div>
-        <div class="video-container" style="margin-top: -120px">
+        <div class="video-container lg:-mt-[120px]">
           <video width="450" loop muted playsinline>
             <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
@@ -385,7 +385,7 @@ onUnmounted(() => {
         <h2>系统反馈与透明性</h2>
         <div>让 AI 行为可见、可理解</div>
       </div>
-      <div class="desc-container mt-10">
+      <div class="desc-container flex lg:flex-row max-lg:flex-col mt-10">
         <div class="desc-info">
           AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
           <br />
@@ -396,7 +396,7 @@ onUnmounted(() => {
             <li>支持多 Agent 的状态同步展示</li>
           </ul>
         </div>
-        <div class="video-container" style="margin-top: -120px">
+        <div class="video-container lg:-mt-[120px]">
           <video width="450" loop muted playsinline>
             <source src="@/assets/human_in_loop.mp4" type="video/mp4" />
             您的浏览器不支持视频播放。
