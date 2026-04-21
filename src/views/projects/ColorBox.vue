@@ -7,8 +7,8 @@ const props = withDefaults(
     borderWidth?: number;
   }>(),
   {
-    colorFrom: "",
-    colorTo: "",
+    colorFrom: "#8f41e9",
+    colorTo: "#578aef",
     radius: 16,
     borderWidth: 2,
   },
@@ -20,6 +20,8 @@ const props = withDefaults(
     :style="{
       '--box-radius': props.radius + 'px',
       '--box-border-width': props.borderWidth + 'px',
+      '--box-color-form': props.colorFrom,
+      '--box-color-to': props.colorTo,
     }"
   >
     <slot></slot>
@@ -44,7 +46,11 @@ const props = withDefaults(
   bottom: 0;
   margin: -2px;
   border-radius: inherit;
-  background: linear-gradient(to right, #8f41e9, #578aef);
+  background: linear-gradient(
+    to right,
+    var(--box-color-form),
+    var(--box-color-to)
+  );
   z-index: -2;
 }
 .color-box::after {
@@ -56,6 +62,6 @@ const props = withDefaults(
   bottom: 0;
   z-index: -1;
   background-color: #fff;
-  border-radius: inherit;
+  border-radius: calc(var(--box-radius) - 1px);
 }
 </style>

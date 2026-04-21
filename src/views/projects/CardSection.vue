@@ -15,14 +15,10 @@ const props = withDefaults(
     bgWidth: "50%",
   },
 );
-function rightWidthScale(widthScale: string) {
-  const [numerator, denominator] = widthScale.split("/").map(Number);
-  return `${denominator - numerator}/${denominator}`;
-}
 </script>
 <template>
   <section
-    class="glass-card bg-dot-small mt-10 normal-text"
+    class="glass-card bg-dot-small mt-10 normal-text !aspect-auto"
     :class="{
       'show-bg': props.rightBg,
     }"
@@ -65,6 +61,9 @@ function rightWidthScale(widthScale: string) {
   </section>
 </template>
 <style lang="scss" scoped>
+.glass-card {
+  position: relative;
+}
 .show-bg {
   position: relative;
   overflow: hidden;

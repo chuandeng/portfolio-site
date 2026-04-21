@@ -2,6 +2,10 @@
 import { onMounted, onUnmounted } from "vue";
 import backgroundImg from "@/assets/project2_background.png";
 import sectionBgImg from "@/assets/project2_section_bg.png";
+import project2Img1 from "@/assets/project2-img1.png";
+import project2Img2 from "@/assets/project2-img2.png";
+import project2Img3 from "@/assets/project2-img3.png";
+import project2Img4 from "@/assets/project2-img4.png";
 let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
@@ -102,37 +106,167 @@ onUnmounted(() => {
       </div>
     </CardSection>
     <CardSection title="平台能力架构" main-with="100%">
-      <div class="flex flex-row">
-        <div><img src="@/assets/pt-left.png" /></div>
+      <div class="flex flex-row justify-center">
+        <div class="absolute float-left">
+          <img src="@/assets/pt-left.png" />
+        </div>
         <div class="flex flex-col gap-2">
           <div>通过分层架构，将复杂业务流程转化为标准化执行系统。</div>
-
-          <div class="card-block border-box">
-            <div class="card-body">
-              <div class="card-title">理解业务流程</div>
-              <div class="card-info">
-                AI 学习流程步骤、角色分工与执行规则，确保行为符合既定 playbook
-              </div>
+          <ColorBox
+            :radius="6"
+            class="p-4 text-sm"
+            color-from="#FD9DB3"
+            color-to="#E399FC"
+          >
+            <div class="font-semibold">
+              Participant Layer : 连接内部团队、客户与合作方
+            </div>
+            <div class="text-gray-500">Internal Teams / Client / Partners</div>
+          </ColorBox>
+          <ColorBox
+            :radius="6"
+            class="p-4 text-sm"
+            color-from="#E399FC"
+            color-to="#9EA1FD"
+          >
+            <div class="font-semibold">
+              Experience Layer：提供多端一致体验入口
+            </div>
+            <div class="text-gray-500">Internal Portal / Client Portal</div>
+          </ColorBox>
+          <ColorBox
+            :radius="6"
+            class="p-4 text-sm"
+            color-to="#9EA1FD"
+            color-from="#9AE5FC"
+          >
+            <div class="font-semibold">Action Layer：承载沟通、任务执行</div>
+            <div class="text-gray-500">
+              Workspaces/ Human Actions / AI Automations...
+            </div>
+          </ColorBox>
+          <ColorBox
+            :radius="6"
+            class="p-4 text-sm"
+            color-to="#9AE5FC"
+            color-from="#F9DA38"
+          >
+            <div class="font-semibold">
+              Orchestration Layer：自动驱动流程流转
+            </div>
+            <div class="text-gray-500">
+              Workflow Engine / Routing / SLA / Rules
+            </div>
+          </ColorBox>
+          <ColorBox
+            :radius="6"
+            class="p-4 text-sm"
+            color-to="#9AE5FC"
+            color-from="#F4AA17"
+          >
+            <div class="font-semibold">
+              Platform Layer：支持企业系统集成与扩展
+            </div>
+            <div class="text-gray-500">API / SDK / Integrations / Security</div>
+          </ColorBox>
+        </div>
+        <div class="absolute float-right">
+          <img src="@/assets/pt-right.png" />
+        </div>
+      </div>
+    </CardSection>
+    <CardSection title="核心系统能力" desc="Core Capabilities" main-with="100%">
+      <div class="flex gap-5 flex-col">
+        <div>
+          通过统一流程引擎协调人与系统协作执行，让复杂业务流程实现标准化、可追踪与可规模化运行。
+        </div>
+        <img src="@/assets/image-19.png" />
+        <div class="flex flex-row gap-4 v-line">
+          <div>
+            <div class="font-semibold">AI 驱动执行</div>
+            <div class="text-gray-500 text-sm">
+              AI
+              agent可自动准备文档、校验输入内容、推动流程节点流转、发送提醒并确保
+              SLA 达成
             </div>
           </div>
-          <div class="card-block border-box">
-            <div class="card-body">
-              <div class="card-title">遵循规则与权限</div>
-              <div class="card-info">
-                Agent 始终遵守权限控制、合规要求与升级路径
-              </div>
+          <div>
+            <div class="font-semibold">决策由人掌控</div>
+            <div class="text-gray-500 text-sm">
+              关键审核、审批及风险决策交由对应责任人处理，确保责任清晰与可追溯。
             </div>
           </div>
-          <div class="card-block border-box">
-            <div class="card-body">
-              <div class="card-title">知道何时执行、何时等待</div>
-              <div class="card-info">
-                AI 自动推进标准流程，但在关键节点暂停，交由人工处理
-              </div>
+          <div>
+            <div class="font-semibold">智能化自动编排</div>
+            <div class="text-gray-500 text-sm">
+              通过条件逻辑、流程模板、里程碑与系统联动，实现多方协作流程自动运行。
+            </div>
+          </div>
+          <div>
+            <div class="font-semibold">可视化与管控并存</div>
+            <div class="text-gray-500 text-sm">
+              所有动作完整记录，并通过角色权限控制，确保信息按需可见。
             </div>
           </div>
         </div>
-        <div><img src="@/assets/pt-right.png" /></div>
+      </div>
+    </CardSection>
+    <CardSection
+      title="流程驱动的协作空间"
+      desc="Drive measurable outcomes"
+      :img-src="project2Img1"
+      main-with="40%"
+    >
+      <p>我们将业务流程抽象为可复用的 Flow 模板，帮助企业实现标准化执行。</p>
+      <p class="mt-4">流程不再依赖人工追踪，而由系统自动推进。</p>
+    </CardSection>
+    <CardSection
+      title="流程编排"
+      desc="Workflow Builder"
+      :img-src="project2Img2"
+      main-with="40%"
+    >
+      <div class="flex flex-col gap-4">
+        <p>
+          将沟通、任务、文件与审批整合进同一流程上下文中，不仅提升执行效率，也让流程结果可追踪、可分析、可优化。
+        </p>
+
+        <p>
+          持续沉淀完整的运营记录，包括操作动作、文档、决策过程、消息沟通与时间戳信息。
+        </p>
+        <p>
+          所有数据均与流程中的具体步骤关联，帮助企业衡量效率、识别瓶颈，并持续优化流程表现。
+        </p>
+      </div>
+    </CardSection>
+    <CardSection
+      title="参与者体验"
+      desc="Participant Experience"
+      main-with="100%"
+    >
+      <p>
+        根据不同角色的使用需求，强调不同角色在流程中的体验差异化设计。不同角色看到不同复杂度的信息。
+      </p>
+
+      <div class="flex flex-row gap-10 mt-5">
+        <div>
+          <img src="@/assets/project2-img3.png" />
+          <div class="green-box">
+            <div class="font-semibold">客户专注于任务</div>
+            <div class="text-gray-500 text-sm">
+              只看到自己的任务，获取必要上下文信息，快速完成操作。
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="@/assets/project2-img4.png" />
+          <div class="blue-box">
+            <div class="font-semibold">协调员全程掌控</div>
+            <div class="text-gray-500 text-sm">
+              全面了解整个流程的每个步骤、状态和参与者，让您始终掌握工作进展和需要关注的事项。
+            </div>
+          </div>
+        </div>
       </div>
     </CardSection>
   </div>
@@ -143,6 +277,25 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+.v-line {
+  position: relative;
+  > div:not(:first-child)::after {
+    content: " ";
+    border-left: 1px solid rgb(128, 132, 157, 0.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin-left: -10px;
+  }
+}
+.float-left {
+  top: 60px;
+  left: 0px;
+}
+.float-right {
+  top: 50px;
+  right: 0px;
 }
 .icon-list {
   > div {
