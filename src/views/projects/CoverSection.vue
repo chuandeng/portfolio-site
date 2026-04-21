@@ -1,0 +1,51 @@
+<script setup lang="ts">
+const props = withDefaults(
+  defineProps<{
+    title: string;
+    desc?: string;
+    scope?: string;
+    role?: string;
+    platform?: string;
+  }>(),
+  {
+    scope: "AI workflow, interaction design, system",
+    role: "Product Designer (UE)",
+    platform: "Web，IOS,  Android, SDK",
+  },
+);
+</script>
+<template>
+  <section class="glass-card bg-dot-small padding30">
+    <div class="project-title">
+      <img src="@/assets/moxo-logo.png" />
+      <div class="normal-text">{{ props.title }}</div>
+    </div>
+    <h1 class="normal-text text-large">
+      {{ props.desc }}
+    </h1>
+    <div class="normal-text pt-20 text-info color-secondary">
+      <div><b>Role: </b>{{ props.role }}</div>
+      <div><b>Scope: </b>{{ props.scope }}</div>
+      <div><b>Platform: </b>{{ props.platform }}</div>
+    </div>
+  </section>
+</template>
+<style lang="scss" scoped>
+.project-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  grid-gap: 30px;
+  img {
+    width: 60px;
+  }
+  div {
+    flex-grow: 1;
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+</style>
