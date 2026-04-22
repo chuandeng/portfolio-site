@@ -4,7 +4,6 @@ import backgroundImg from "@/assets/project2_background.png";
 import sectionBgImg from "@/assets/project2_section_bg.png";
 import project2Img1 from "@/assets/project2-img1.png";
 import project2Img2 from "@/assets/project2-img2.png";
-import project2Img5 from "@/assets/project2-img5.png";
 import project2Img6 from "@/assets/project2-img6.png";
 import crossPlatformVideo from "@/assets/cross-platform.mp4";
 let observer: IntersectionObserver | null = null;

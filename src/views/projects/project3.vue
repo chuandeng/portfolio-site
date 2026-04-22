@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 import img1 from "@/assets/project3-img1.png";
-import project2Img1 from "@/assets/project2-img1.png";
 import project2Img2 from "@/assets/project3-img2.png";
 import project2Img3 from "@/assets/project3-img3.png";
 import project2Img4 from "@/assets/project3-img4.png";
