@@ -41,7 +41,7 @@ const generateNotes = (): Note[] => {
       front: "about.note1-front",
       back: "about.note1-back",
       color: generatePastelColor(),
-      left: 20,
+      left: 0,
       top: 0,
     },
     {
@@ -57,8 +57,8 @@ const generateNotes = (): Note[] => {
       front: "about.note3-front",
       back: "about.note3-back",
       color: generatePastelColor(),
-      left: 0,
-      top: 160,
+      left: -20,
+      top: 190,
     },
     {
       id: 4,
@@ -66,7 +66,7 @@ const generateNotes = (): Note[] => {
       back: "about.note4-back",
       color: generatePastelColor(),
       left: 220,
-      top: 220,
+      top: 240,
     },
     {
       id: 5,
@@ -74,7 +74,7 @@ const generateNotes = (): Note[] => {
       back: "about.note5-back",
       color: generatePastelColor(),
       left: 40,
-      top: 330,
+      top: 380,
     },
   ];
   return baseNotes;

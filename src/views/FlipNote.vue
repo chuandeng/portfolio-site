@@ -82,8 +82,8 @@ const onMouseLeave = () => {
 .flip-container,
 .front,
 .back {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
 }
 
 .front,
@@ -162,7 +162,7 @@ span .h3,
 .back {
   transform: rotateY(-180deg);
   font-size: 14px !important;
-  line-height: 16px !important;
+  line-height: 18px !important;
 }
 .no-shadow {
   box-shadow: none !important;
