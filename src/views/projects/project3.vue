@@ -9,8 +9,6 @@ import project2Img5 from "@/assets/project3-img5.png";
 import project2Bg1 from "@/assets/project3-bg1.png";
 
 import ciscoLogo from "@/assets/cisco-logo.png";
-import project2Img6 from "@/assets/project2-img6.png";
-import crossPlatformVideo from "@/assets/cross-platform.mp4";
 let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
@@ -45,7 +43,13 @@ onUnmounted(() => {
       desc="Business Orchestration Platform"
       scope="AI workflow, interaction design, system"
     />
-    <CardSection title="项目背景" :img-src="img1" main-with="40%">
+    <CardSection
+      title="项目背景"
+      :img-src="img1"
+      main-with="40%"
+      right-class="w-sm"
+      :img-border="false"
+    >
       <div class="flex flex-col gap-10">
         <div>
           随着产品规模增长，原有样式指南已无法支撑复杂产品需求，界面逐渐出现体验不一致、维护低效与扩展受限的问题。
@@ -95,7 +99,12 @@ onUnmounted(() => {
         </div>
       </div>
     </CardSection>
-    <CardSection title="架构定义" :img-src="project2Img2" main-with="40%">
+    <CardSection
+      title="架构定义"
+      :img-border="false"
+      :img-src="project2Img2"
+      main-with="40%"
+    >
       <div class="flex flex-col gap-10">
         <div>
           我们从审查现有组件和页面开始，创建了一个最小但可扩展的结构。这包括三个主要文件：
@@ -160,6 +169,7 @@ onUnmounted(() => {
     <CardSection
       title="引入 Design Token"
       :img-src="project2Img3"
+      :img-border="false"
       main-with="50%"
     >
       <div class="flex flex-col gap-6">

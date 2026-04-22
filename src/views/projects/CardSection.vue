@@ -10,8 +10,10 @@ const props = withDefaults(
     rightBg?: string;
     bgWidth?: string;
     titleClass?: string;
+    imgBorder?: boolean;
   }>(),
   {
+    imgBorder: true,
     mainWith: "50%",
     bgWidth: "50%",
   },
@@ -48,18 +50,30 @@ const props = withDefaults(
         v-if="props.videoSrc || props.imgSrc"
         :class="[
           'grow flex justify-center',
-          props.rightClass ? props.rightClass : '',
           {
             'img-container': !!props.imgSrc,
             'video-container': !!props.videoSrc,
           },
         ]"
       >
-        <video v-if="props.videoSrc" loop muted playsinline>
+        <video
+          v-if="props.videoSrc"
+          loop
+          muted
+          playsinline
+          :class="props.rightClass ? props.rightClass : ''"
+        >
           <source :src="props.videoSrc" type="video/mp4" />
           您的浏览器不支持视频播放。
         </video>
-        <img v-if="props.imgSrc" :src="props.imgSrc" />
+        <img
+          v-if="props.imgSrc"
+          :src="props.imgSrc"
+          :class="[
+            props.rightClass ? props.rightClass : '',
+            { 'img-border': props.imgBorder },
+          ]"
+        />
       </div>
     </div>
   </section>
@@ -109,24 +123,24 @@ const props = withDefaults(
 
 .video-container {
   flex-shrink: 0;
-  border-radius: 5px;
-  overflow: hidden;
-  width: 450px;
+
+  max-width: 450px;
   height: auto;
   > video {
+    border-radius: 5px;
     display: block;
     width: auto;
-    max-width: 100%;
     max-height: 648px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 }
-
+.img-border {
+  border: 1px solid rgb(128, 132, 157, 0.1);
+}
 .img-container {
   > img {
     border-radius: 6px;
-    border: 1px solid rgb(128, 132, 157, 0.1);
     max-height: fit-content;
   }
 }
