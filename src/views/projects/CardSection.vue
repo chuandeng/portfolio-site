@@ -47,7 +47,7 @@ const props = withDefaults(
       <div
         v-if="props.videoSrc || props.imgSrc"
         :class="[
-          'grow',
+          'grow flex justify-center',
           props.rightClass ? props.rightClass : '',
           {
             'img-container': !!props.imgSrc,
@@ -55,7 +55,7 @@ const props = withDefaults(
           },
         ]"
       >
-        <video v-if="props.videoSrc" width="100%" loop muted playsinline>
+        <video v-if="props.videoSrc" loop muted playsinline>
           <source :src="props.videoSrc" type="video/mp4" />
           您的浏览器不支持视频播放。
         </video>
@@ -111,24 +111,23 @@ const props = withDefaults(
   flex-shrink: 0;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 450px;
   height: auto;
-  &.width-max {
-    width: 600px;
+  > video {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 648px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 .img-container {
-  img {
+  > img {
     border-radius: 6px;
     border: 1px solid rgb(128, 132, 157, 0.1);
+    max-height: fit-content;
   }
 }
 </style>

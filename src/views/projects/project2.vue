@@ -6,7 +6,7 @@ import project2Img1 from "@/assets/project2-img1.png";
 import project2Img2 from "@/assets/project2-img2.png";
 import project2Img5 from "@/assets/project2-img5.png";
 import project2Img6 from "@/assets/project2-img6.png";
-
+import crossPlatformVideo from "@/assets/cross-platform.mp4";
 let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
@@ -265,6 +265,42 @@ onUnmounted(() => {
             <div class="font-semibold">协调员全程掌控</div>
             <div class="text-gray-500 text-sm">
               全面了解整个流程的每个步骤、状态和参与者，让您始终掌握工作进展和需要关注的事项。
+            </div>
+          </div>
+        </div>
+      </div>
+    </CardSection>
+    <CardSection
+      title="多触点交付能力"
+      main-with="50%"
+      :video-src="crossPlatformVideo"
+    >
+      <div class="flex flex-col items-center">
+        本项目聚焦于设计一套面向企业服务场景的统一操作平台，核心目标包括：
+        <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
+          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
+            <IconCompute />
+            <div>
+              <h3 class="text-base">提升流程执行效率</h3>
+              <span class="text-sm text-gray-500"
+                >通过流程自动推进减少人工协调</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
+            <IconPhone />
+            <div>
+              <h3 class="text-base/7">优化客户参与体验</h3>
+              <span class="text-sm text-gray-500">降低外部用户使用门槛</span>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 py-3 px-4 bg-white">
+            <IconEmbed />
+            <div>
+              <h3 class="text-base/6">实现跨平台一致体验</h3>
+              <span class="text-sm text-gray-500"
+                >Web、Mobile、Embedded 场景统一</span
+              >
             </div>
           </div>
         </div>

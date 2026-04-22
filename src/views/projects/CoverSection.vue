@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import moxoLogo from "@/assets/moxo-logo.png";
+
 const props = withDefaults(
   defineProps<{
     title: string;
@@ -6,8 +8,10 @@ const props = withDefaults(
     scope?: string;
     role?: string;
     platform?: string;
+    logo?: string;
   }>(),
   {
+    logo: moxoLogo,
     scope: "AI workflow, interaction design, system",
     role: "Product Designer (UE)",
     platform: "Web，IOS,  Android, SDK",
@@ -17,10 +21,10 @@ const props = withDefaults(
 <template>
   <section class="glass-card bg-dot-small padding30">
     <div class="project-title">
-      <img src="@/assets/moxo-logo.png" />
-      <div class="normal-text">{{ props.title }}</div>
+      <img :src="props.logo" />
+      <div class="normal-text text-5xl">{{ props.title }}</div>
     </div>
-    <h1 class="normal-text text-large">
+    <h1 class="normal-text text-4xl">
       {{ props.desc }}
     </h1>
     <div class="normal-text pt-20 text-info color-secondary">

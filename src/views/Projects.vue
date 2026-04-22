@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import project2Img from "@/assets/project2_cover.png";
 import project1Img from "@/assets/project1_cover.png";
+import project3Img from "@/assets/project3_cover.png";
 
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
@@ -11,21 +12,21 @@ const { t } = useI18n();
 const projets = computed(() => [
   {
     id: "project1",
-    title: [
-      t("projects.project1.titlePrefix"),
-      t("projects.project1.title"),
-    ].join(": "),
+    title: t("projects.project1.title"),
     description: t("projects.project1.description"),
     image: project1Img,
   },
   {
     id: "project2",
-    title: [
-      t("projects.project2.titlePrefix"),
-      t("projects.project2.title"),
-    ].join(": "),
+    title: t("projects.project2.title"),
     description: t("projects.project2.description"),
     image: project2Img,
+  },
+  {
+    id: "project3",
+    title: t("projects.project3.title"),
+    description: t("projects.project3.description"),
+    image: project3Img,
   },
 ]);
 const gotoProject = (id: string) => {

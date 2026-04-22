@@ -37,8 +37,8 @@ onUnmounted(() => {
 <template>
   <div class="project-detail">
     <CoverSection
-      :title="$t('projects.project1.titlePrefix')"
-      :desc="$t('projects.project1.title')"
+      :title="$t('projects.project1.title')"
+      :desc="$t('projects.project1.description')"
     ></CoverSection>
     <CardSection
       title="背景和设计目标"
