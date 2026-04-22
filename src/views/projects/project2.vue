@@ -4,8 +4,8 @@ import backgroundImg from "@/assets/project2_background.png";
 import sectionBgImg from "@/assets/project2_section_bg.png";
 import project2Img1 from "@/assets/project2-img1.png";
 import project2Img2 from "@/assets/project2-img2.png";
-import project2Img3 from "@/assets/project2-img3.png";
-import project2Img4 from "@/assets/project2-img4.png";
+import project2Img5 from "@/assets/project2-img5.png";
+
 let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
@@ -249,7 +249,7 @@ onUnmounted(() => {
       </p>
 
       <div class="flex flex-row gap-10 mt-5">
-        <div>
+        <div class="w-1/2">
           <img src="@/assets/project2-img3.png" />
           <div class="green-box">
             <div class="font-semibold">客户专注于任务</div>
@@ -258,12 +258,44 @@ onUnmounted(() => {
             </div>
           </div>
         </div>
-        <div>
+        <div class="w-1/2">
           <img src="@/assets/project2-img4.png" />
           <div class="blue-box">
             <div class="font-semibold">协调员全程掌控</div>
             <div class="text-gray-500 text-sm">
               全面了解整个流程的每个步骤、状态和参与者，让您始终掌握工作进展和需要关注的事项。
+            </div>
+          </div>
+        </div>
+      </div>
+    </CardSection>
+    <CardSection title="多触点交付能力" main-with="50%" :img-src="project2Img5">
+      <div class="flex flex-col items-center">
+        本项目聚焦于设计一套面向企业服务场景的统一操作平台，核心目标包括：
+        <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
+          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
+            <IconCompute />
+            <div>
+              <h3 class="text-base">提升流程执行效率</h3>
+              <span class="text-sm text-gray-500"
+                >通过流程自动推进减少人工协调</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
+            <IconPhone />
+            <div>
+              <h3 class="text-base/7">优化客户参与体验</h3>
+              <span class="text-sm text-gray-500">降低外部用户使用门槛</span>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 py-3 px-4 bg-white">
+            <IconEmbed />
+            <div>
+              <h3 class="text-base/6">实现跨平台一致体验</h3>
+              <span class="text-sm text-gray-500"
+                >Web、Mobile、Embedded 场景统一</span
+              >
             </div>
           </div>
         </div>
@@ -277,6 +309,21 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+.green-box,
+.blue-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 20px;
+  margin: -60px 20px 0 20px;
+  z-index: 1;
+  position: relative;
+}
+.green-box {
+  background: linear-gradient(101.32deg, #ebffea 34.64%, #c7ffe0 100%);
+}
+.blue-box {
+  background: linear-gradient(101.42deg, #f2faff 5.43%, #cceaff 100%);
 }
 .v-line {
   position: relative;
