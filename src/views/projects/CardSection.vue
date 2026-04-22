@@ -9,6 +9,7 @@ const props = withDefaults(
     mainWith?: string;
     rightBg?: string;
     bgWidth?: string;
+    titleClass?: string;
   }>(),
   {
     mainWith: "50%",
@@ -27,7 +28,10 @@ const props = withDefaults(
       '--section-bg-width': props.bgWidth,
     }"
   >
-    <div class="flex flex-col gap-2">
+    <div
+      class="flex flex-col gap-2"
+      :class="[props.titleClass ? props.titleClass : '']"
+    >
       <h2 class="text-4xl font-semibold">{{ props.title }}</h2>
       <div v-if="props.desc" class="text-1xl pl-1">{{ props.desc }}</div>
     </div>

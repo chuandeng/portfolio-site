@@ -5,6 +5,7 @@ import sectionBgImg from "@/assets/project2_section_bg.png";
 import project2Img1 from "@/assets/project2-img1.png";
 import project2Img2 from "@/assets/project2-img2.png";
 import project2Img5 from "@/assets/project2-img5.png";
+import project2Img6 from "@/assets/project2-img6.png";
 
 let observer: IntersectionObserver | null = null;
 
@@ -269,35 +270,57 @@ onUnmounted(() => {
         </div>
       </div>
     </CardSection>
-    <CardSection title="多触点交付能力" main-with="50%" :img-src="project2Img5">
-      <div class="flex flex-col items-center">
-        本项目聚焦于设计一套面向企业服务场景的统一操作平台，核心目标包括：
-        <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
-          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
-            <IconCompute />
-            <div>
-              <h3 class="text-base">提升流程执行效率</h3>
-              <span class="text-sm text-gray-500"
-                >通过流程自动推进减少人工协调</span
-              >
-            </div>
+    <CardSection
+      title="设计策略与方法论"
+      main-with="50%"
+      desc="Design Principles"
+      :right-bg="project2Img6"
+    >
+      <div class="flex flex-col gap-8 mb-20">
+        <div>
+          <div class="font-semibold">Flow-first UX</div>
+          <div class="text-gray-500 text-sm">
+            围绕流程组织体验，而非页面结构。
           </div>
-          <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
-            <IconPhone />
-            <div>
-              <h3 class="text-base/7">优化客户参与体验</h3>
-              <span class="text-sm text-gray-500">降低外部用户使用门槛</span>
-            </div>
+        </div>
+        <div>
+          <div class="font-semibold">Role-based Simplicity</div>
+          <div class="text-gray-500 text-sm">
+            不同角色看到不同复杂度的信息。
           </div>
-          <div class="flex flex-row items-center gap-4 py-3 px-4 bg-white">
-            <IconEmbed />
-            <div>
-              <h3 class="text-base/6">实现跨平台一致体验</h3>
-              <span class="text-sm text-gray-500"
-                >Web、Mobile、Embedded 场景统一</span
-              >
-            </div>
+        </div>
+        <div>
+          <div class="font-semibold">Action-oriented Interface</div>
+          <div class="text-gray-500 text-sm">
+            让用户始终清楚下一步要做什么。
           </div>
+        </div>
+        <div>
+          <div class="font-semibold">Invisible Complexity</div>
+          <div class="text-gray-500 text-sm">将复杂逻辑隐藏在系统背后。</div>
+        </div>
+      </div>
+    </CardSection>
+    <CardSection
+      title="总结"
+      desc="Conclusion"
+      title-class="ml-30"
+      main-with="85%"
+    >
+      <div class="flex flex-col gap-4 ml-30 mb-30">
+        <div>
+          参与 Moxo
+          的设计过程，让我更加深入地理解了：复杂的业务流程，同样可以被设计成清晰、高效且可规模化的产品体验。
+        </div>
+        <div>
+          通过将流程编排、协作体验与平台能力整合为统一系统，Moxo
+          帮助团队提升执行效率，也让客户与合作方获得更顺畅的参与体验。
+        </div>
+        <div>
+          这个项目让我更加确信，优秀的企业级产品设计，不仅是让界面更易用，更重要的是通过系统化思考，降低业务运作中的复杂度。随着企业协作方式不断演进，产品体验也需要持续进化。
+        </div>
+        <div>
+          我也期待在未来的设计工作中，继续把复杂的问题梳理清晰，把流程体验设计得更加自然、高效。
         </div>
       </div>
     </CardSection>
