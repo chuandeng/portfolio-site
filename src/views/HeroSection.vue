@@ -41,7 +41,9 @@ const { t } = useI18n();
   grid-gap: 20px;
 }
 .my-description {
-  font-family: "Nunito Sans", "Nunito Sans Placeholder", sans-serif;
+  font-family:
+    "Nunito Sans", "Nunito Sans Placeholder", "PingFang SC", "Microsoft YaHei",
+    "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   color: rgb(128, 132, 157);
   font-size: 18px;
   line-height: 1.6em;
@@ -49,7 +51,9 @@ const { t } = useI18n();
 }
 
 .my-info {
-  font-family: Solway, "Solway Placeholder", serif;
+  font-family:
+    Solway, "Solway Placeholder", "PingFang SC", "Microsoft YaHei",
+    "Hiragino Sans GB", "WenQuanYi Micro Hei", serif;
   color: rgb(71, 71, 71);
   font-size: 52px;
   font-weight: 700;

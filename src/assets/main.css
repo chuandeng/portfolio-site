@@ -46,7 +46,7 @@ body {
 /* 自定义基础样式 */
 body {
   @apply antialiased;
-  font-family: "Nunito Sans", "Nunito Sans Placeholder", sans-serif;
+  font-family: "Nunito Sans", "Nunito Sans Placeholder", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   color: var(--color-primary);
   font-size: 14px;
 }
