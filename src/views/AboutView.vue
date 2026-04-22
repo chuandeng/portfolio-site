@@ -131,7 +131,7 @@ const containerWidth = cardSize * 2 + columnGap;
             <h3>{{ $t(note.front) }}</h3>
           </template>
           <template #back>
-            <h3>{{ $t(note.back) }}</h3>
+            <span>{{ $t(note.back) }}</span>
           </template>
         </FlipNote>
       </div>

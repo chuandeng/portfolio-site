@@ -52,13 +52,13 @@ const onMouseLeave = () => {
   >
     <div class="flipper">
       <div
-        class="front"
+        class="front normal-text"
         :style="color ? { backgroundColor: color } : undefined"
       >
         <slot name="front" />
       </div>
       <div
-        class="back"
+        class="back normal-text"
         :style="fadedColor ? { backgroundColor: fadedColor } : undefined"
       >
         <slot name="back" />
@@ -97,6 +97,7 @@ const onMouseLeave = () => {
   color: var(--color-primary);
   padding: 10px;
   font-size: 12px;
+  line-height: 12px;
 }
 
 span .h3,
@@ -141,11 +142,9 @@ span .h3,
   backface-visibility: hidden;
   transition: 0.6s;
   transform-style: preserve-3d;
-  font-family: "Gaegu", "Noto Sans SC", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 19px;
   padding: 10px;
   position: absolute;
   top: 0;
@@ -156,11 +155,14 @@ span .h3,
 .front {
   z-index: 2;
   transform: rotateY(0deg);
+  font-size: 16px;
 }
 
 /* back, initially hidden pane */
 .back {
   transform: rotateY(-180deg);
+  font-size: 14px !important;
+  line-height: 16px !important;
 }
 .no-shadow {
   box-shadow: none !important;

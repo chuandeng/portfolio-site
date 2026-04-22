@@ -1,7 +1,7 @@
 {
   "hero": {
     "tag1": "产品/UX 设计师",
-    "tag2": "人机交互设计硕士",
+    "tag2": "人机交互设计专家",
     "tag3": "20 年设计经验",
     "title": "你好，我是 Lulu",
     "description": "我相信\"设计即连接\"，希望借助设计的力量将人们联结在一起。"
@@ -17,22 +17,31 @@
   },
   "about": {
     "title": "关于我",
-    "note1-front": "这里是关于页面的内容",
-    "note1-back": "这是关于页面的内容的背面",
-    "note2-front": "这是第二个翻转笔记的正面",
-    "note2-back": "这是第二个翻转笔记的背面",
-    "note3-front": "这是第三个翻转笔记的正面",
-    "note3-back": "这是第三个翻转笔记的背面"
+    "note1-front": "多元化技能储备",
+    "note1-back": "覆盖产品策略、UX 设计、设计系统、前端开发与 AI 流程设计的复合能力。",
+    "note2-front": "全链路设计经验",
+    "note2-back": "具备从用户研究、方案设计到开发落地与持续迭代的完整经验。",
+    "note3-front": "复杂产品专家",
+    "note3-back": "擅长企业级平台、复杂流程与多角色协作场景的体验设计。",
+    "note4-front": "AI 产品经验",
+    "note4-back": "具备 AI Agent、人机协同及自动化流程产品设计经验。",
+    "note5-front": "系统化思维",
+    "note5-back": "擅长从零搭建设计系统，提升效率与产品一致性。"
   },
   "projects": {
     "title": "精选项目",
-    "item1-title": "Moxo AI: 企业级智能工作流编排平台",
-    "item1-desc": "Moxo AI 是构建在 Moxo 客户协作平台之上的 Agentic AI 能力体系，旨在将 AI 深度嵌入业务流程中，从“辅助工具”升级为“可执行任务的智能协作者”。",
-    "item2-title": "Moxo AI: 企业级智能工作流编排平台",
-    "item2-desc": "Moxo AI 是构建在 Moxo 客户协作平台之上的 Agentic AI 能力体系，旨在将 AI 深度嵌入业务流程中，从“辅助工具”升级为“可执行任务的智能协作者”。"
-  },
-  "voices": {
-    "title": "Voices from my Journey"
+    "project1": {
+      "title": "Moxo AI",
+      "description": "面向人机协作的 Agentic 工作流设计"
+    },
+    "project2": {
+      "title": "Moxo 企业智能工作流平台",
+      "description": "业务流程编排平台"
+    },
+    "project3": {
+      "title": "设计系统升级：Design Token 实践",
+      "description": "显著提升设计效率与 UI 一致性，支持浅色/深色模式及多品牌设计。"
+    }
   },
   "footer": {
     "rights": "保留所有权利"

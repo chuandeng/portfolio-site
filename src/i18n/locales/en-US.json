@@ -17,12 +17,16 @@
   },
   "about": {
     "title": "About Me",
-    "note1-front": "this is first flip note front",
-    "note1-back": "this is first flip note back",
-    "note2-front": "this is second flip note front",
-    "note2-back": "this is second flip note back",
-    "note3-front": "this is third flip note front",
-    "note3-back": "this is third flip note back"
+    "note1-front": "Diverse Skill Set",
+    "note1-back": "A versatile blend of product strategy, UX design, design systems, front-end development, and AI workflow design.",
+    "note2-front": "End-to-End Design Experience",
+    "note2-back": "Comprehensive experience spanning user research, solution design, development handoff, and continuous iteration.",
+    "note3-front": "Complex Product Specialist",
+    "note3-back": "Expert in experience design for enterprise platforms, complex workflows, and multi-role collaboration scenarios.",
+    "note4-front": "AI Product Experience",
+    "note4-back": "Experience in designing AI Agent, human-AI collaboration, and automated workflow products.",
+    "note5-front": "Systematic Thinking",
+    "note5-back": "Skilled at building design systems from scratch to improve efficiency and product consistency."
   },
   "projects": {
     "title": "Featured Projects",
