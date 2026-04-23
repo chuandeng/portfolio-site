@@ -38,7 +38,7 @@ const gotoProject = (id: string) => {
   <section
     class="justify-center mt-80 flex flex-col items-center text-center project-section"
   >
-    <SectionHeader :title="$t('projects.title')" />
+    <SectionHeader :title="$t('projects.title')" id="FeaturedProject" />
     <div
       class="project-item"
       v-for="item in projets"

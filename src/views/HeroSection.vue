@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import "@lottiefiles/lottie-player";
-
+function goToNext() {
+  const el = document.getElementById("FeaturedProject");
+  el?.scrollIntoView();
+}
 const { t } = useI18n();
 const arrowDownSrc = new URL("../assets/arrow-down.json", import.meta.url).href;
 </script>
@@ -20,7 +23,8 @@ const arrowDownSrc = new URL("../assets/arrow-down.json", import.meta.url).href;
       <p class="my-description">{{ t("hero.description") }}</p>
     </div>
     <lottie-player
-      class="mt-20"
+      class="mt-20 cursor-pointer"
+      @click="goToNext"
       autoplay
       loop
       mode="normal"

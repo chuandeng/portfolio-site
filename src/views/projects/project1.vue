@@ -41,207 +41,199 @@ onUnmounted(() => {
       :desc="$t('projects.project1.description')"
     ></CoverSection>
     <CardSection
-      title="背景和设计目标"
-      desc="Designing for both automation and control"
+      :title="$t('projects.project1.detail.backgroundAndDesignGoals')"
+      :desc="$t('projects.project1.detail.designingForBothAutomationAnd')"
       :videoSrc="moxoAiMp4"
       main-with="40%"
       rightClass="lg:-mt-[100px]"
     >
-      在企业协作中，业务流程分散在多个系统，<br />
-      依赖大量人工操作，效率低且缺乏一致性。<br />
+      {{$t('projects.project1.detail.inEnterpriseCollaborationBusinessProcesses')}}<br />
+      {{$t('projects.project1.detail.relyingHeavilyOnManualOperations')}}<br />
       <br />
-      尽管生成式 AI 已具备强大能力，但在实际产品中仍主要作为：<br />
-      工具，而非流程参与者。<br />
+      {{$t('projects.project1.detail.althoughGenerativeAiHasPowerful')}}<br />
+      {{$t('projects.project1.detail.aToolRatherThanA')}}<br />
       <br />
-      我们需要构建一套 Agentic AI Workflow System，<br />
-      让 AI 从<span>“辅助工具”</span>转变为<span>“流程执行者”</span>，<br />
-      同时确保关键决策始终由人掌控。
+      {{$t('projects.project1.detail.weNeedToBuildAn')}}<br />
+      {{$t('projects.project1.detail.allowingAiToTransitionFrom')}}<span>{{$t('projects.project1.detail.auxiliaryTool')}}</span>{{$t('projects.project1.detail.to')}}<span>{{$t('projects.project1.detail.processExecutor')}}</span>，<br />
+      {{$t('projects.project1.detail.whileEnsuringThatKeyDecisions')}}
     </CardSection>
     <CardSection
-      title="机会（Opportunity）"
-      desc="From AI tools to AI systems"
+      :title="$t('projects.project1.detail.opportunity')"
+      :desc="$t('projects.project1.detail.fromAiToolsToAi')"
       main-with="100%"
     >
-      本项目的设计机会不在于增加一个 AI 功能，而在于构建一个让 AI
-      能够在流程中运作的系统。 为此，我将整体能力拆分为四个核心模块：<br />
+      {{$t('projects.project1.detail.theDesignOpportunityLiesNot')}}<br />
       <br />
       <br />
       <ul>
-        <li>AI Copilot：用户与 AI 的交互入口</li>
-        <li>Multi-Agent System：执行不同任务的 AI 单元</li>
-        <li>Tooling：AI 调用的实际能力</li>
-        <li>Human-in-the-Loop：保障可控性的机制</li>
+        <li>{{$t('projects.project1.detail.aiCopilotTheInteractionGateway')}}</li>
+        <li>{{$t('projects.project1.detail.multiAgentSystemAiUnits')}}</li>
+        <li>{{$t('projects.project1.detail.toolingTheActualCapabilitiesThat')}}</li>
+        <li>{{$t('projects.project1.detail.humanInTheLoopThe')}}</li>
       </ul>
       <br />
       <img src="@/assets/opportunity.png" />
     </CardSection>
     <CardSection
-      title="AI 如何在流程中发挥作用"
-      desc="What Moxo AI Actually Does"
+      :title="$t('projects.project1.detail.howAiWorksInWorkflows')"
+      :desc="$t('projects.project1.detail.whatMoxoAiActuallyDoes')"
       main-with="100%"
     >
       <div class="card-container">
         <div class="card-block">
           <img src="@/assets/card1.png" />
           <div class="card-body">
-            <div class="card-title">提前准备工作</div>
+            <div class="card-title">{{$t('projects.project1.detail.proactivePreparation')}}</div>
             <div class="card-info">
-              AI
-              自动完成信息收集、表单预填与材料整理，使任务在到达人之前已经完整、可执行。
+              {{$t('projects.project1.detail.aiAutomaticallyCompletesInformationCollection')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card2.png" />
           <div class="card-body">
-            <div class="card-title">提前发现问题</div>
+            <div class="card-title">{{$t('projects.project1.detail.earlyProblemDetection')}}</div>
             <div class="card-info">
-              AI
-              在提交时即时检查完整性、准确性与合规性，在问题影响流程前提前暴露。
+              {{$t('projects.project1.detail.aiInstantlyChecksCompletenessAccuracy')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card3.png" />
           <div class="card-body">
-            <div class="card-title">自动流转任务</div>
+            <div class="card-title">{{$t('projects.project1.detail.automaticTaskRouting')}}</div>
             <div class="card-info">
-              AI
-              根据角色与流程自动分配任务，触发后续步骤，确保任务始终在正确的人之间流转。
+              {{$t('projects.project1.detail.aiAutomaticallyAssignsTasksBased')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card5.png" />
           <div class="card-body">
-            <div class="card-title">预防流程阻塞</div>
+            <div class="card-title">{{$t('projects.project1.detail.preventingWorkflowBlockages')}}</div>
             <div class="card-info">
-              AI 持续监控流程状态，识别风险与延迟，并主动提醒或升级处理。
+              {{$t('projects.project1.detail.aiContinuouslyMonitorsWorkflowStatus')}}
             </div>
           </div>
         </div>
       </div>
     </CardSection>
     <CardSection
-      title="AI Copilot"
-      desc="Bringing AI into the flow"
+      :title="$t('projects.project1.detail.aiCopilot')"
+      :desc="$t('projects.project1.detail.bringingAiIntoTheFlow')"
       :videoSrc="aiCopilotMp4"
       rightClass="width-max "
       main-with="40%"
     >
-      AI Copilot 被设计为用户与 AI 的交互入口之一，是流程中的协作助手。
+      {{$t('projects.project1.detail.aiCopilotIsDesignedAs')}}
       <br />
       <br />
-      设计重点包括：
+      {{$t('projects.project1.detail.designFocusesInclude')}}
       <ul>
-        <li>将 AI 自然嵌入流程，而非打断用户任务</li>
-        <li>基于上下文减少用户输入成本</li>
-        <li>提供清晰反馈，使 AI 行为可理解、可预期</li>
+        <li>{{$t('projects.project1.detail.embeddingAiNaturallyIntoWorkflows')}}</li>
+        <li>{{$t('projects.project1.detail.reducingUserInputCostsBased')}}</li>
+        <li>{{$t('projects.project1.detail.providingClearFeedbackToMake')}}</li>
       </ul>
     </CardSection>
     <CardSection
-      title="多 Agent 系统 (Multi-Agent)"
-      desc="Designing a multi-agent system"
+      :title="$t('projects.project1.detail.multiAgentSystem')"
+      :desc="$t('projects.project1.detail.designingAMultiAgentSystem')"
       :imgSrc="mutipleAgentsPng"
       rightClass="width-max"
       main-with="50%"
     >
-      为了支持复杂业务场景，我将 AI 能力拆解为多个具备不同职责的 Agent。
+      {{$t('projects.project1.detail.toSupportComplexBusinessScenarios')}}
       <br />
       <br />
-      Action Agents：执行具体任务，数据提取，文件处理，流程流转等。
+      {{$t('projects.project1.detail.actionAgentsExecuteSpecificTasks')}}
       <ul>
-        <li>Automation Agent</li>
-        <li>Custom Agent</li>
+        <li>{{$t('projects.project1.detail.automationAgent')}}</li>
+        <li>{{$t('projects.project1.detail.customAgent')}}</li>
       </ul>
 
-      Assist Agents：<br />
-      总结信息，提供建议，帮助用户完成任务。
+      {{$t('projects.project1.detail.assistAgents')}}<br />
+      {{$t('projects.project1.detail.summarizeInformationProvideSuggestionsAnd')}}
       <ul>
-        <li>Review Agent：判断结果质量</li>
-        <li>Advice Agent：提供决策建议</li>
-        <li>Prepare Agent：完成信息预填</li>
+        <li>{{$t('projects.project1.detail.reviewAgentAssessesResultQuality')}}</li>
+        <li>{{$t('projects.project1.detail.adviceAgentProvidesDecisionRecommendations')}}</li>
+        <li>{{$t('projects.project1.detail.prepareAgentCompletesInformationPre')}}</li>
       </ul>
       <br />
-      通过模块化设计，使 AI 能够在流程中被灵活编排，实现协同工作。
+      {{$t('projects.project1.detail.throughModularDesignAiCan')}}
     </CardSection>
     <CardSection
-      title="Tooling"
-      desc="Turning AI into an operator"
+      :title="$t('projects.project1.detail.tooling')"
+      :desc="$t('projects.project1.detail.turningAiIntoAnOperator')"
       :videoSrc="toolingMp4"
       rightClass="lg:-mt-[120px]"
     >
-      为了让 AI 能够真正“执行任务”，我设计了一套 Tooling 机制，使 Agent
-      可以调用实际业务能力：
+      {{$t('projects.project1.detail.toEnableAiToTrulyExecute')}}
       <br />
       <ul>
-        <li>文件处理与管理</li>
-        <li>数据操作</li>
-        <li>第三方系统集成</li>
+        <li>{{$t('projects.project1.detail.fileProcessingAndManagement')}}</li>
+        <li>{{$t('projects.project1.detail.dataOperations')}}</li>
+        <li>{{$t('projects.project1.detail.thirdPartySystemIntegration')}}</li>
       </ul>
       <br />
-      设计重点在于将复杂能力抽象为标准化接口，同时保持灵活性与可扩展性。
+      {{$t('projects.project1.detail.theDesignFocusIsOn')}}
       <br />
-      通过模块化设计，使 AI 能够在流程中被灵活编排，实现协同工作。
+      {{$t('projects.project1.detail.throughModularDesignAiCan')}}
     </CardSection>
     <CardSection
-      title="Human-in-the-Loop"
-      desc="Balancing automation with human control"
+      :title="$t('projects.project1.detail.humanInTheLoop')"
+      :desc="$t('projects.project1.detail.balancingAutomationWithHumanControl')"
       :videoSrc="humanInLoopMp4"
       rightClass="lg:-mt-[120px]"
     >
-      在关键节点引入 Human-in-the-Loop 机制，使用户能够对 AI
-      的行为进行干预与控制。
+      {{$t('projects.project1.detail.introducingHumanInTheLoop')}}
       <br />
-      支持多种触发方式：
+      {{$t('projects.project1.detail.supportsMultipleTriggerMethods')}}
       <ul>
-        <li>基于置信度</li>
-        <li>基于规则条件</li>
-        <li>强制人工审核</li>
+        <li>{{$t('projects.project1.detail.basedOnConfidenceLevel')}}</li>
+        <li>{{$t('projects.project1.detail.basedOnRuleConditions')}}</li>
+        <li>{{$t('projects.project1.detail.mandatoryHumanReview')}}</li>
       </ul>
 
-      该设计在提升效率的同时，确保流程的可靠性与安全性。
+      {{$t('projects.project1.detail.thisDesignImprovesEfficiencyWhile')}}
     </CardSection>
     <CardSection
-      title="以人为核心的责任设计"
-      desc="Human Accountability by Design"
+      :title="$t('projects.project1.detail.humanAccountabilityByDesign')"
+      :desc="$t('projects.project1.detail.humanAccountabilityByDesign_1')"
       main-with="100%"
     >
-      Moxo
-      的设计基于一个简单但关键的原则：关键决策必须由人来判断，并由人承担责任。
-      AI Agent 负责推动流程，但不会取代决策者。
+      {{$t('projects.project1.detail.moxoDesignIsBasedOnA')}}
       <br />
       <div class="mt-10 card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">人做决策</div>
-            <div class="card-info">AI 推动流程前进，但关键决策始终由人完成</div>
+            <div class="card-title">{{$t('projects.project1.detail.humansMakeDecisions')}}</div>
+            <div class="card-info">{{$t('projects.project1.detail.aiPushesWorkflowsForwardBut')}}</div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">AI 预处理行动</div>
+            <div class="card-title">{{$t('projects.project1.detail.aiPreprocessingActions')}}</div>
             <div class="card-info">
-              所有任务在到达人之前，已完成准备、校验与整理
+              {{$t('projects.project1.detail.allTasksArePreparedVerified')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">基于角色的治理机制</div>
-            <div class="card-info">AI Agent 仅在其角色权限范围内执行操作</div>
+            <div class="card-title">{{$t('projects.project1.detail.roleBasedGovernanceMechanism')}}</div>
+            <div class="card-info">{{$t('projects.project1.detail.aiAgentsOnlyOperateWithin')}}</div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">效率与控制并存</div>
-            <div class="card-info">AI 提升流程效率，同时人仍对最终结果负责</div>
+            <div class="card-title">{{$t('projects.project1.detail.efficiencyAndControlCoexist')}}</div>
+            <div class="card-info">{{$t('projects.project1.detail.aiImprovesWorkflowEfficiencyWhile')}}</div>
           </div>
         </div>
       </div>
-      <div class="mt-8 text-xl font-bold">“AI 负责执行，人负责决策 ”</div>
+      <div class="mt-8 text-xl font-bold">{{$t('projects.project1.detail.aiExecutesHumansDecide')}}</div>
       <div class="flex m-1 mb-2">
-        <div>AI Agents（准备 / 执行 / 校验）</div>
+        <div>{{$t('projects.project1.detail.aiAgentsPrepareExecuteVerify')}}</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -253,7 +245,7 @@ onUnmounted(() => {
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
           ></path>
         </svg>
-        <div>人类决策层</div>
+        <div>{{$t('projects.project1.detail.humanDecisionLayer')}}</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -265,25 +257,25 @@ onUnmounted(() => {
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
           ></path>
         </svg>
-        <div>最终结果</div>
+        <div>{{$t('projects.project1.detail.finalResult')}}</div>
       </div>
     </CardSection>
     <CardSection
-      title="AI Governance"
-      desc="Al that adapts to your processes, rules, and playbooks"
+      :title="$t('projects.project1.detail.aiGovernance')"
+      :desc="$t('projects.project1.detail.aiThatAdaptsToYour')"
       main-with="100%"
     >
-      <p>Moxo AI 并不是自由运行的智能体，而是基于企业真实运作方式进行适配：</p>
-      <p>包括流程、角色、权限、规则与审批逻辑。</p>
-      <p>AI 在关键决策之外推动流程执行， 但始终在既定规则与边界内运行。</p>
+      <p>{{$t('projects.project1.detail.moxoAiIsNotA')}}</p>
+      <p>{{$t('projects.project1.detail.includingWorkflowsRolesPermissionsRules')}}</p>
+      <p>{{$t('projects.project1.detail.aiDrivesWorkflowExecutionOutside')}}</p>
       <br />
       <div class="mt-10 card-container">
         <div class="card-block border-box">
           <img src="@/assets/flow_img_1.svg" class="card-icon" />
           <div class="card-body">
-            <div class="card-title">理解业务流程</div>
+            <div class="card-title">{{$t('projects.project1.detail.understandingBusinessProcesses')}}</div>
             <div class="card-info">
-              AI 学习流程步骤、角色分工与执行规则，确保行为符合既定 playbook
+              {{$t('projects.project1.detail.aiLearnsWorkflowStepsRole')}}
             </div>
           </div>
         </div>
@@ -291,9 +283,9 @@ onUnmounted(() => {
           <img src="@/assets/flow_img_2.svg" class="card-icon" />
 
           <div class="card-body">
-            <div class="card-title">遵循规则与权限</div>
+            <div class="card-title">{{$t('projects.project1.detail.followingRulesAndPermissions')}}</div>
             <div class="card-info">
-              Agent 始终遵守权限控制、合规要求与升级路径
+              {{$t('projects.project1.detail.agentsAlwaysAdhereToPermission')}}
             </div>
           </div>
         </div>
@@ -301,76 +293,73 @@ onUnmounted(() => {
           <img src="@/assets/flow_img_3.svg" class="card-icon" />
 
           <div class="card-body">
-            <div class="card-title">知道何时执行、何时等待</div>
+            <div class="card-title">{{$t('projects.project1.detail.knowingWhenToExecuteAnd')}}</div>
             <div class="card-info">
-              AI 自动推进标准流程，但在关键节点暂停，交由人工处理
+              {{$t('projects.project1.detail.aiAutomaticallyAdvancesStandardWorkflows')}}
             </div>
           </div>
         </div>
       </div>
     </CardSection>
     <CardSection
-      title="系统反馈与透明性"
-      desc="让 AI 行为可见、可理解"
+      :title="$t('projects.project1.detail.systemFeedbackAndTransparency')"
+      :desc="$t('projects.project1.detail.makingAiBehaviorVisibleAnd')"
       :imgSrc="responsePng"
       main-with="30%"
     >
       <div class="flex flex-col gap-4">
-        <div>AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。</div>
+        <div>{{$t('projects.project1.detail.ai_1')}}</div>
         <div>
-          我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
+          {{$t('projects.project1.detail.weNeedToBuildA')}}
           <ul>
-            <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
-            <li>明确提示与下一步操作</li>
-            <li>支持多 Agent 的状态同步展示</li>
+            <li>{{$t('projects.project1.detail.statusVisualizationNotStartedIn')}}</li>
+            <li>{{$t('projects.project1.detail.clearPromptsAndNextSteps')}}</li>
+            <li>{{$t('projects.project1.detail.supportsMultiAgentStatusSynchronization')}}</li>
           </ul>
         </div>
       </div>
     </CardSection>
-    <CardSection title="Live Workflow" main-with="100%">
+    <CardSection :title="$t('projects.project1.detail.liveWorkflow')" main-with="100%">
       <div class="desc-info">
-        AI Agent
-        与人工在同一流程中协同工作，实现任务的自动推进与关键节点的人工决策。
+        {{$t('projects.project1.detail.aiAgentCollaboratesWithHumans')}}
         <br />
       </div>
       <div class="w-fit mt-10">
         <video width="100%" loop muted playsinline>
           <source :src="liveWorkflowMp4" type="video/mp4" />
-          您的浏览器不支持视频播放。
+          {{$t('projects.project1.detail.yourBrowserDoesNotSupport')}}
         </video>
       </div>
     </CardSection>
     <CardSection
-      title="AI 驱动的业务成果"
-      desc="Outcomes, Not Features"
+      :title="$t('projects.project1.detail.aiDrivenBusinessOutcomes')"
+      :desc="$t('projects.project1.detail.outcomesNotFeatures')"
       main-with="100%"
     >
-      Moxo
-      的设计基于一个简单但关键的原则：关键决策必须由人来判断，并由人承担责任。
-      AI Agent 负责推动流程，但不会取代决策者。
+      {{$t('projects.project1.detail.moxoDesignIsBasedOnA')}}
       <br />
       <div class="mt-10 card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">2.6x 效率提升</div>
+            <div class="card-title">{{$t('projects.project1.detail.26xEfficiencyImprovement')}}</div>
             <div class="card-info">
-              流程平均完成速度提升 2.6 倍，显著缩短任务交付周期。
+              {{$t('projects.project1.detail.averageWorkflowCompletionSpeedImproved')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">744 项流程任务自动完成</div>
+            <div class="card-title">{{$t('projects.project1.detail.744WorkflowTasksCompletedAutomatically')}}</div>
             <div class="card-info">
-              AI Agents 累计完成 744 次任务执行，减少重复人工操作。
+              {{$t('projects.project1.detail.aiAgentsHaveCompleted744')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">24 → 79 个活跃流程</div>
+            <div class="card-title">{{$t('projects.project1.detail.24To79ActiveWorkflows')}}</div>
             <div class="card-info">
-              启用 AI 的业务流程数量增长超 3 倍，覆盖更多业务场景。
+              {{$t('projects.project1.detail.theNumberOfBusinessWorkflows')}}
             </div>
           </div>
         </div>
@@ -378,66 +367,65 @@ onUnmounted(() => {
       <div class="mt-10 card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">每月新增 5–10 条业务线</div>
+            <div class="card-title">{{$t('projects.project1.detail.510NewBusinessLines')}}</div>
             <div class="card-info">
-              通过更高效的流程响应与协作体验，持续带来新增机会。
+              {{$t('projects.project1.detail.bringingNewOpportunitiesContinuouslyThrough')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">42.3% 转化率</div>
+            <div class="card-title">{{$t('projects.project1.detail.423ConversionRate')}}</div>
             <div class="card-info">
-              AI 驱动的自然流程转化表现优于传统付费获客路径。
+              {{$t('projects.project1.detail.aiDrivenNaturalWorkflowConversion')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">51K → 375K 流程处理量</div>
+            <div class="card-title">{{$t('projects.project1.detail.51kTo375kWorkflowProcessing')}}</div>
             <div class="card-info">
-              系统支撑的业务处理规模快速增长，具备良好扩展能力。
+              {{$t('projects.project1.detail.theBusinessProcessingScaleSupported')}}
             </div>
           </div>
         </div>
       </div>
       <div class="flex mt-10 text-sm items-center justify-center">
         <div>
-          通过将重复执行交给 AI，将关键判断保留给人，Moxo AI
-          在效率、增长与可控性之间建立了可持续的业务价值模型。
+          {{$t('projects.project1.detail.byDelegatingRepetitiveExecutionTo')}}
         </div>
       </div>
     </CardSection>
     <CardSection
-      title="设计反思与扩展"
-      desc="Designing for Human + AI Collaboration"
+      :title="$t('projects.project1.detail.designReflectionAndExpansion')"
+      :desc="$t('projects.project1.detail.designingForHumanAiCollaboration')"
       main-with="100%"
     >
       <div class="flex items-center gap-[10px] mb-[10px]">
-        <IconMiaozhun />核心收获
+        <IconMiaozhun />{{$t('projects.project1.detail.coreTakeaways')}}
       </div>
       <div class="card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">信任是 AI 产品的核心</div>
+            <div class="card-title">{{$t('projects.project1.detail.trustIsTheCoreOf')}}</div>
             <div class="card-info">
-              用户是否采纳 AI，取决于是否理解其行为，并能够在关键时刻进行控制
+              {{$t('projects.project1.detail.whetherUsersAdoptAiDepends')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">自动化必须与控制并存</div>
+            <div class="card-title">{{$t('projects.project1.detail.automationMustCoexistWithControl')}}</div>
             <div class="card-info">
-              效率提升的前提，是用户始终掌握关键决策权
+              {{$t('projects.project1.detail.thePrerequisiteForEfficiencyGains')}}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">可解释性决定可用性</div>
+            <div class="card-title">{{$t('projects.project1.detail.explainabilityDeterminesUsability')}}</div>
             <div class="card-info">
-              只有当 AI 行为可见、可理解时，用户才会真正依赖系统
+              {{$t('projects.project1.detail.onlyWhenAiBehaviorIs')}}
             </div>
           </div>
         </div>
@@ -445,44 +433,44 @@ onUnmounted(() => {
 
       <div class="flex flex-col mt-10 text-sm gap-[10px]">
         <div class="flex items-center gap-[10px]">
-          <IconMiaozhun />设计转变（Design Shift）
+          <IconMiaozhun />{{$t('projects.project1.detail.designShift')}}
         </div>
         <div>
           <ul>
-            <li>从「用户操作」到「系统协同」</li>
-            <li>从「界面设计」到「流程设计」</li>
-            <li>从「功能设计」到「规则与机制设计」</li>
+            <li>{{$t('projects.project1.detail.fromUserOperationsToSystem')}}</li>
+            <li>{{$t('projects.project1.detail.fromInterfaceDesignToWorkflow')}}</li>
+            <li>{{$t('projects.project1.detail.fromFeatureDesignToRules')}}</li>
           </ul>
         </div>
       </div>
       <div class="flex mt-10 text-sm flex-col gap-[10px]">
-        <div class="flex items-center gap-[10px]"><IconBook />可优化方向</div>
+        <div class="flex items-center gap-[10px]"><IconBook />{{$t('projects.project1.detail.areasForImprovement')}}</div>
         <div>
           <ul>
-            <li>提供更直观的流程可视化能力</li>
-            <li>降低复杂配置的学习成本</li>
-            <li>引入更智能的默认策略，减少用户决策负担</li>
+            <li>{{$t('projects.project1.detail.provideMoreIntuitiveWorkflowVisualization')}}</li>
+            <li>{{$t('projects.project1.detail.reduceLearningCostsForComplex')}}</li>
+            <li>{{$t('projects.project1.detail.introduceSmarterDefaultStrategiesTo')}}</li>
           </ul>
         </div>
       </div>
       <div class="flex mt-10 text-sm items-center justify-center">
         <IconStart></IconStart>
-        <span>人与 AI 的协作方式，将成为下一代 UX 的核心命题</span>
+        <span>{{$t('projects.project1.detail.theCollaborationModelBetweenHumans')}}</span>
       </div>
     </CardSection>
     <CardSection
-      title="系统反馈与透明性"
-      desc="让 AI 行为可见、可理解"
+      :title="$t('projects.project1.detail.systemFeedbackAndTransparency')"
+      :desc="$t('projects.project1.detail.makingAiBehaviorVisibleAnd')"
       :videoSrc="humanInLoopMp4"
       rightClass="lg:-mt-[120px]"
     >
-      AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
+      {{$t('projects.project1.detail.ai_1')}}
       <br />
-      我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
+      {{$t('projects.project1.detail.weNeedToBuildA')}}
       <ul>
-        <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
-        <li>明确提示与下一步操作</li>
-        <li>支持多 Agent 的状态同步展示</li>
+        <li>{{$t('projects.project1.detail.statusVisualizationNotStartedIn')}}</li>
+        <li>{{$t('projects.project1.detail.clearPromptsAndNextSteps')}}</li>
+        <li>{{$t('projects.project1.detail.supportsMultiAgentStatusSynchronization')}}</li>
       </ul>
     </CardSection>
   </div>
