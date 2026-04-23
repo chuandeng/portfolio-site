@@ -45,8 +45,8 @@ const gotoProject = (id: string) => {
       :key="item.id"
       @click="gotoProject(item.id)"
     >
-      <div class="projet-item-inner">
-        <div class="project-item-img">
+      <div class="projet-item-inner flex">
+        <div class="project-item-img shrink-0">
           <img :src="item.image" class="w-full max-w-2xl rounded-lg mb-8" />
         </div>
         <div class="project-info">
@@ -128,10 +128,13 @@ const gotoProject = (id: string) => {
   padding-right: 20px;
   position: relative;
 }
-.project-info h3 {
+.my-info,
+.my-description {
   font-family:
-    Solway, "Solway Placeholder", "PingFang SC", "Microsoft YaHei",
-    "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif, serif;
+    "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei",
+    sans-serif, serif;
+}
+.project-info h3 {
   color: var(--color-primary);
   font-size: 28px;
   font-weight: 700;

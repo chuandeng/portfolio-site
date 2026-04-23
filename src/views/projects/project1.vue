@@ -44,6 +44,8 @@ onUnmounted(() => {
       title="背景和设计目标"
       desc="Designing for both automation and control"
       :videoSrc="moxoAiMp4"
+      main-with="40%"
+      rightClass="lg:-mt-[100px]"
     >
       在企业协作中，业务流程分散在多个系统，<br />
       依赖大量人工操作，效率低且缺乏一致性。<br />
@@ -124,7 +126,7 @@ onUnmounted(() => {
       title="AI Copilot"
       desc="Bringing AI into the flow"
       :videoSrc="aiCopilotMp4"
-      rightClass="width-max"
+      rightClass="width-max "
       main-with="40%"
     >
       AI Copilot 被设计为用户与 AI 的交互入口之一，是流程中的协作助手。
@@ -311,15 +313,19 @@ onUnmounted(() => {
       title="系统反馈与透明性"
       desc="让 AI 行为可见、可理解"
       :imgSrc="responsePng"
+      main-with="30%"
     >
-      AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。
-      <br />
-      我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
-      <ul>
-        <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
-        <li>明确提示与下一步操作</li>
-        <li>支持多 Agent 的状态同步展示</li>
-      </ul>
+      <div class="flex flex-col gap-4">
+        <div>AI系统往往具有“黑盒”特征，用户难以理解当前状态与执行过程。</div>
+        <div>
+          我们需要构建统一的系统反馈机制，使 AI 执行过程清晰可见：
+          <ul>
+            <li>状态可视化（未开始 / 执行中 / 已完成 / 失败）</li>
+            <li>明确提示与下一步操作</li>
+            <li>支持多 Agent 的状态同步展示</li>
+          </ul>
+        </div>
+      </div>
     </CardSection>
     <CardSection title="Live Workflow" main-with="100%">
       <div class="desc-info">

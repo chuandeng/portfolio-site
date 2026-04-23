@@ -216,6 +216,7 @@ onUnmounted(() => {
       desc="Drive measurable outcomes"
       :img-src="project2Img1"
       main-with="40%"
+      right-class="lg:-mt-[80px]"
     >
       <p>我们将业务流程抽象为可复用的 Flow 模板，帮助企业实现标准化执行。</p>
       <p class="mt-4">流程不再依赖人工追踪，而由系统自动推进。</p>
@@ -225,6 +226,7 @@ onUnmounted(() => {
       desc="Workflow Builder"
       :img-src="project2Img2"
       main-with="40%"
+      right-class="lg:-mt-[80px]"
     >
       <div class="flex flex-col gap-4">
         <p>
@@ -273,6 +275,7 @@ onUnmounted(() => {
       title="多触点交付能力"
       main-with="50%"
       :video-src="crossPlatformVideo"
+      right-class="lg:-mt-[80px]"
     >
       <div class="flex flex-col items-center">
         本项目聚焦于设计一套面向企业服务场景的统一操作平台，核心目标包括：
