@@ -45,11 +45,11 @@ const gotoProject = (id: string) => {
       :key="item.id"
       @click="gotoProject(item.id)"
     >
-      <div class="projet-item-inner flex">
+      <div class="projet-item-inner flex md:w-2xl">
         <div class="project-item-img shrink-0">
           <img :src="item.image" class="w-full max-w-2xl rounded-lg mb-8" />
         </div>
-        <div class="project-info">
+        <div class="project-info grow">
           <h3 class="my-info">{{ item.title }}</h3>
           <p class="my-description">
             {{ item.description }}
@@ -85,7 +85,7 @@ const gotoProject = (id: string) => {
     transition: all 0.3s ease;
     width: 268px;
     height: 268px;
-    border-radius: 18px;
+    border-radius: 14px;
     display: inline-block;
     flex-shrink: 0;
     padding: 10px;

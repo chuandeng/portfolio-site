@@ -52,8 +52,8 @@ const { t } = useI18n();
 
 .my-info {
   font-family:
-    Solway, "Solway Placeholder", "PingFang SC", "Microsoft YaHei",
-    "Hiragino Sans GB", "WenQuanYi Micro Hei", serif;
+    "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei",
+    serif;
   color: rgb(71, 71, 71);
   font-size: 52px;
   font-weight: 700;
