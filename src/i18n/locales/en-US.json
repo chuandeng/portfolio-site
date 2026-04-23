@@ -30,6 +30,7 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "productDesigner": "Product Designer (UE)",
     "project1": {
       "title": "Moxo AI",
       "description": "Designing Agentic Workflows for Human + AI Collaboration",

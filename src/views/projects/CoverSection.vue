@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import moxoLogo from "@/assets/moxo-logo.png";
+import { useI18n } from "vue-i18n";
 
+import moxoLogo from "@/assets/moxo-logo.png";
 const props = withDefaults(
   defineProps<{
     title: string;
@@ -13,8 +14,8 @@ const props = withDefaults(
   {
     logo: moxoLogo,
     scope: "AI workflow, interaction design, system",
-    role: "Product Designer (UE)",
-    platform: "Web，IOS,  Android, SDK",
+    role: "",
+    platform: "Web, IOS, Android",
   },
 );
 </script>
@@ -29,7 +30,7 @@ const props = withDefaults(
       </h1>
     </div>
     <div class="normal-text text-info color-secondary">
-      <div><b>Role: </b>{{ props.role }}</div>
+      <div><b>Role: </b>{{ props.role || $t("projects.productDesigner") }}</div>
       <div><b>Scope: </b>{{ props.scope }}</div>
       <div><b>Platform: </b>{{ props.platform }}</div>
     </div>

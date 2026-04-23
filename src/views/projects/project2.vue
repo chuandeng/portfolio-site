@@ -38,25 +38,49 @@ onUnmounted(() => {
       :title="$t('projects.project2.detail.moxoBusinessProcessPlatformDesign')"
       :desc="$t('projects.project2.detail.businessOrchestrationPlatform')"
       scope="AI workflow, interaction design, system"
+      platform="Web, IOS, Android, SDK"
+      ,
     />
-    <CardSection :title="$t('projects.project2.detail.projectBackground')" :img-src="backgroundImg" widthScale="2/5">
-      {{$t('projects.project2.detail.inEnterpriseServiceScenariosA')}}
+    <CardSection
+      :title="$t('projects.project2.detail.projectBackground')"
+      :img-src="backgroundImg"
+      widthScale="2/5"
+    >
+      {{ $t("projects.project2.detail.inEnterpriseServiceScenariosA") }}
       <ul>
-        <li>{{$t('projects.project2.detail.emailHandlesCommunication')}}</li>
-        <li>{{$t('projects.project2.detail.spreadsheetsHandleInformationCollection')}}</li>
-        <li>{{$t('projects.project2.detail.cloudDrivesHandleFileManagement')}}</li>
-        <li>{{$t('projects.project2.detail.independentSystemsHandleApprovalAnd')}}</li>
+        <li>{{ $t("projects.project2.detail.emailHandlesCommunication") }}</li>
+        <li>
+          {{
+            $t(
+              "projects.project2.detail.spreadsheetsHandleInformationCollection",
+            )
+          }}
+        </li>
+        <li>
+          {{ $t("projects.project2.detail.cloudDrivesHandleFileManagement") }}
+        </li>
+        <li>
+          {{
+            $t("projects.project2.detail.independentSystemsHandleApprovalAnd")
+          }}
+        </li>
       </ul>
 
-      {{$t('projects.project2.detail.thisResultsIn')}}
+      {{ $t("projects.project2.detail.thisResultsIn") }}
       <ul>
-        <li>{{$t('projects.project2.detail.lowCollaborationEfficiency')}}</li>
-        <li>{{$t('projects.project2.detail.workflowStatusIsNotVisible')}}</li>
-        <li>{{$t('projects.project2.detail.complexClientParticipationExperience')}}</li>
-        <li>{{$t('projects.project2.detail.highlyDependentOnManualPushing')}}</li>
+        <li>{{ $t("projects.project2.detail.lowCollaborationEfficiency") }}</li>
+        <li>{{ $t("projects.project2.detail.workflowStatusIsNotVisible") }}</li>
+        <li>
+          {{
+            $t("projects.project2.detail.complexClientParticipationExperience")
+          }}
+        </li>
+        <li>
+          {{ $t("projects.project2.detail.highlyDependentOnManualPushing") }}
+        </li>
       </ul>
 
-      {{$t('projects.project2.detail.theGoalOfTheProject')}}
+      {{ $t("projects.project2.detail.theGoalOfTheProject") }}
     </CardSection>
     <CardSection
       :title="$t('projects.project2.detail.designObjectives')"
@@ -65,52 +89,89 @@ onUnmounted(() => {
       bg-width="40%"
     >
       <div class="flex flex-col items-center">
-        {{$t('projects.project2.detail.thisProjectFocusesOnDesigning')}}
+        {{ $t("projects.project2.detail.thisProjectFocusesOnDesigning") }}
         <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
           <div class="flex flex-row items-center gap-4">
             <img src="@/assets/list-icon1.png" />
             <div>
-              <h3 class="text-base">{{$t('projects.project2.detail.improveWorkflowExecutionEfficiency')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project2.detail.reduceManualCoordinationThroughAutomated')}}</span
-              >
+              <h3 class="text-base">
+                {{
+                  $t(
+                    "projects.project2.detail.improveWorkflowExecutionEfficiency",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t(
+                  "projects.project2.detail.reduceManualCoordinationThroughAutomated",
+                )
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
             <img src="@/assets/list-icon2.png" />
             <div>
-              <h3 class="text-base">{{$t('projects.project2.detail.optimizeClientParticipationExperience')}}</h3>
-              <span class="text-sm text-gray-500">{{$t('projects.project2.detail.lowerTheBarrierForExternal')}}</span>
+              <h3 class="text-base">
+                {{
+                  $t(
+                    "projects.project2.detail.optimizeClientParticipationExperience",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project2.detail.lowerTheBarrierForExternal")
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
             <img src="@/assets/list-icon3.png" />
             <div>
-              <h3 class="text-base">{{$t('projects.project2.detail.achieveConsistentCrossPlatformExperience')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project2.detail.unifiedWebMobileAndEmbedded')}}</span
-              >
+              <h3 class="text-base">
+                {{
+                  $t(
+                    "projects.project2.detail.achieveConsistentCrossPlatformExperience",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project2.detail.unifiedWebMobileAndEmbedded")
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
             <img src="@/assets/list-icon4.png" />
             <div>
-              <h3 class="text-base">{{$t('projects.project2.detail.supportEnterpriseLevelGovernanceCapabilities')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project2.detail.meetPermissionSecurityAndAudit')}}</span
-              >
+              <h3 class="text-base">
+                {{
+                  $t(
+                    "projects.project2.detail.supportEnterpriseLevelGovernanceCapabilities",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project2.detail.meetPermissionSecurityAndAudit")
+              }}</span>
             </div>
           </div>
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project2.detail.platformCapabilityArchitecture')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project2.detail.platformCapabilityArchitecture')"
+      main-with="100%"
+    >
       <div class="flex flex-row justify-center">
         <div class="absolute float-left">
           <img src="@/assets/pt-left.png" />
         </div>
         <div class="flex flex-col gap-2">
-          <div>{{$t('projects.project2.detail.throughLayeredArchitectureComplexBusiness')}}</div>
+          <div>
+            {{
+              $t(
+                "projects.project2.detail.throughLayeredArchitectureComplexBusiness",
+              )
+            }}
+          </div>
           <ColorBox
             :radius="6"
             class="p-4 text-sm"
@@ -118,7 +179,11 @@ onUnmounted(() => {
             color-to="#E399FC"
           >
             <div class="font-semibold">
-              {{$t('projects.project2.detail.participantLayerConnectInternalTeams')}}
+              {{
+                $t(
+                  "projects.project2.detail.participantLayerConnectInternalTeams",
+                )
+              }}
             </div>
             <div class="text-gray-500">Internal Teams / Client / Partners</div>
           </ColorBox>
@@ -129,7 +194,11 @@ onUnmounted(() => {
             color-to="#9EA1FD"
           >
             <div class="font-semibold">
-              {{$t('projects.project2.detail.experienceLayerProvideConsistentMulti')}}
+              {{
+                $t(
+                  "projects.project2.detail.experienceLayerProvideConsistentMulti",
+                )
+              }}
             </div>
             <div class="text-gray-500">Internal Portal / Client Portal</div>
           </ColorBox>
@@ -139,7 +208,13 @@ onUnmounted(() => {
             color-to="#9EA1FD"
             color-from="#9AE5FC"
           >
-            <div class="font-semibold">{{$t('projects.project2.detail.actionLayerSupportCommunicationAnd')}}</div>
+            <div class="font-semibold">
+              {{
+                $t(
+                  "projects.project2.detail.actionLayerSupportCommunicationAnd",
+                )
+              }}
+            </div>
             <div class="text-gray-500">
               Workspaces/ Human Actions / AI Automations...
             </div>
@@ -151,7 +226,11 @@ onUnmounted(() => {
             color-from="#F9DA38"
           >
             <div class="font-semibold">
-              {{$t('projects.project2.detail.orchestrationLayerAutomaticallyDriveWorkflow')}}
+              {{
+                $t(
+                  "projects.project2.detail.orchestrationLayerAutomaticallyDriveWorkflow",
+                )
+              }}
             </div>
             <div class="text-gray-500">
               Workflow Engine / Routing / SLA / Rules
@@ -164,7 +243,11 @@ onUnmounted(() => {
             color-from="#F4AA17"
           >
             <div class="font-semibold">
-              {{$t('projects.project2.detail.platformLayerSupportEnterpriseSystem')}}
+              {{
+                $t(
+                  "projects.project2.detail.platformLayerSupportEnterpriseSystem",
+                )
+              }}
             </div>
             <div class="text-gray-500">API / SDK / Integrations / Security</div>
           </ColorBox>
@@ -174,35 +257,57 @@ onUnmounted(() => {
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project2.detail.coreSystemCapabilities')" :desc="$t('projects.project2.detail.coreCapabilities')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project2.detail.coreSystemCapabilities')"
+      :desc="$t('projects.project2.detail.coreCapabilities')"
+      main-with="100%"
+    >
       <div class="flex gap-5 flex-col">
         <div>
-          {{$t('projects.project2.detail.throughAUnifiedWorkflowEngine')}}
+          {{ $t("projects.project2.detail.throughAUnifiedWorkflowEngine") }}
         </div>
         <img src="@/assets/image-19.png" />
         <div class="flex flex-row gap-4 v-line">
           <div>
-            <div class="font-semibold">{{$t('projects.project2.detail.aiDrivenExecution')}}</div>
+            <div class="font-semibold">
+              {{ $t("projects.project2.detail.aiDrivenExecution") }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.aiAgentsCanAutomaticallyPrepare')}}
+              {{
+                $t("projects.project2.detail.aiAgentsCanAutomaticallyPrepare")
+              }}
             </div>
           </div>
           <div>
-            <div class="font-semibold">{{$t('projects.project2.detail.decisionsControlledByHumans')}}</div>
+            <div class="font-semibold">
+              {{ $t("projects.project2.detail.decisionsControlledByHumans") }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.keyReviewsApprovalsAndRisk')}}
+              {{ $t("projects.project2.detail.keyReviewsApprovalsAndRisk") }}
             </div>
           </div>
           <div>
-            <div class="font-semibold">{{$t('projects.project2.detail.intelligentAutomatedOrchestration')}}</div>
+            <div class="font-semibold">
+              {{
+                $t("projects.project2.detail.intelligentAutomatedOrchestration")
+              }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.throughConditionalLogicWorkflowTemplates')}}
+              {{
+                $t(
+                  "projects.project2.detail.throughConditionalLogicWorkflowTemplates",
+                )
+              }}
             </div>
           </div>
           <div>
-            <div class="font-semibold">{{$t('projects.project2.detail.visualizationAndControlCoexist')}}</div>
+            <div class="font-semibold">
+              {{
+                $t("projects.project2.detail.visualizationAndControlCoexist")
+              }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.allActionsAreFullyRecorded')}}
+              {{ $t("projects.project2.detail.allActionsAreFullyRecorded") }}
             </div>
           </div>
         </div>
@@ -215,8 +320,12 @@ onUnmounted(() => {
       main-with="40%"
       right-class="lg:-mt-[80px]"
     >
-      <p>{{$t('projects.project2.detail.weAbstractBusinessProcessesInto')}}</p>
-      <p class="mt-4">{{$t('projects.project2.detail.workflowsNoLongerRelyOn')}}</p>
+      <p>
+        {{ $t("projects.project2.detail.weAbstractBusinessProcessesInto") }}
+      </p>
+      <p class="mt-4">
+        {{ $t("projects.project2.detail.workflowsNoLongerRelyOn") }}
+      </p>
     </CardSection>
     <CardSection
       :title="$t('projects.project2.detail.workflowOrchestration')"
@@ -227,14 +336,22 @@ onUnmounted(() => {
     >
       <div class="flex flex-col gap-4">
         <p>
-          {{$t('projects.project2.detail.integratingCommunicationTasksDocumentsAnd')}}
+          {{
+            $t(
+              "projects.project2.detail.integratingCommunicationTasksDocumentsAnd",
+            )
+          }}
         </p>
 
         <p>
-          {{$t('projects.project2.detail.continuouslyAccumulateCompleteOperationalRecords')}}
+          {{
+            $t(
+              "projects.project2.detail.continuouslyAccumulateCompleteOperationalRecords",
+            )
+          }}
         </p>
         <p>
-          {{$t('projects.project2.detail.allDataIsAssociatedWith')}}
+          {{ $t("projects.project2.detail.allDataIsAssociatedWith") }}
         </p>
       </div>
     </CardSection>
@@ -244,25 +361,31 @@ onUnmounted(() => {
       main-with="100%"
     >
       <p>
-        {{$t('projects.project2.detail.basedOnTheUsageNeeds')}}
+        {{ $t("projects.project2.detail.basedOnTheUsageNeeds") }}
       </p>
 
       <div class="flex flex-row gap-10 mt-5">
         <div class="w-1/2">
           <img src="@/assets/project2-img3.png" />
           <div class="green-box">
-            <div class="font-semibold">{{$t('projects.project2.detail.clientsFocusOnTasks')}}</div>
+            <div class="font-semibold">
+              {{ $t("projects.project2.detail.clientsFocusOnTasks") }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.onlySeeTheirOwnTasks')}}
+              {{ $t("projects.project2.detail.onlySeeTheirOwnTasks") }}
             </div>
           </div>
         </div>
         <div class="w-1/2">
           <img src="@/assets/project2-img4.png" />
           <div class="blue-box">
-            <div class="font-semibold">{{$t('projects.project2.detail.coordinatorsHaveFullControl')}}</div>
+            <div class="font-semibold">
+              {{ $t("projects.project2.detail.coordinatorsHaveFullControl") }}
+            </div>
             <div class="text-gray-500 text-sm">
-              {{$t('projects.project2.detail.fullyUnderstandEveryStepStatus')}}
+              {{
+                $t("projects.project2.detail.fullyUnderstandEveryStepStatus")
+              }}
             </div>
           </div>
         </div>
@@ -275,31 +398,53 @@ onUnmounted(() => {
       right-class="lg:-mt-[80px]"
     >
       <div class="flex flex-col items-center">
-        {{$t('projects.project2.detail.thisProjectFocusesOnDesigning')}}
+        {{ $t("projects.project2.detail.thisProjectFocusesOnDesigning") }}
         <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
           <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
             <IconCompute />
             <div>
-              <h3 class="text-base">{{$t('projects.project2.detail.improveWorkflowExecutionEfficiency')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project2.detail.reduceManualCoordinationThroughAutomated')}}</span
-              >
+              <h3 class="text-base">
+                {{
+                  $t(
+                    "projects.project2.detail.improveWorkflowExecutionEfficiency",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t(
+                  "projects.project2.detail.reduceManualCoordinationThroughAutomated",
+                )
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
             <IconPhone />
             <div>
-              <h3 class="text-base/7">{{$t('projects.project2.detail.optimizeClientParticipationExperience')}}</h3>
-              <span class="text-sm text-gray-500">{{$t('projects.project2.detail.lowerTheBarrierForExternal')}}</span>
+              <h3 class="text-base/7">
+                {{
+                  $t(
+                    "projects.project2.detail.optimizeClientParticipationExperience",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project2.detail.lowerTheBarrierForExternal")
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-center gap-4 py-3 px-4 bg-white">
             <IconEmbed />
             <div>
-              <h3 class="text-base/6">{{$t('projects.project2.detail.achieveConsistentCrossPlatformExperience')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project2.detail.unifiedWebMobileAndEmbedded')}}</span
-              >
+              <h3 class="text-base/6">
+                {{
+                  $t(
+                    "projects.project2.detail.achieveConsistentCrossPlatformExperience",
+                  )
+                }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project2.detail.unifiedWebMobileAndEmbedded")
+              }}</span>
             </div>
           </div>
         </div>
@@ -315,24 +460,30 @@ onUnmounted(() => {
         <div>
           <div class="font-semibold">Flow-first UX</div>
           <div class="text-gray-500 text-sm">
-            {{$t('projects.project2.detail.organizeExperienceAroundWorkflowsNot')}}
+            {{
+              $t(
+                "projects.project2.detail.organizeExperienceAroundWorkflowsNot",
+              )
+            }}
           </div>
         </div>
         <div>
           <div class="font-semibold">Role-based Simplicity</div>
           <div class="text-gray-500 text-sm">
-            {{$t('projects.project2.detail.differentRolesSeeInformationOf')}}
+            {{ $t("projects.project2.detail.differentRolesSeeInformationOf") }}
           </div>
         </div>
         <div>
           <div class="font-semibold">Action-oriented Interface</div>
           <div class="text-gray-500 text-sm">
-            {{$t('projects.project2.detail.letUsersAlwaysKnowWhat')}}
+            {{ $t("projects.project2.detail.letUsersAlwaysKnowWhat") }}
           </div>
         </div>
         <div>
           <div class="font-semibold">Invisible Complexity</div>
-          <div class="text-gray-500 text-sm">{{$t('projects.project2.detail.hideComplexLogicBehindThe')}}</div>
+          <div class="text-gray-500 text-sm">
+            {{ $t("projects.project2.detail.hideComplexLogicBehindThe") }}
+          </div>
         </div>
       </div>
     </CardSection>
@@ -344,16 +495,20 @@ onUnmounted(() => {
     >
       <div class="flex flex-col gap-4 ml-30 mb-30">
         <div>
-          {{$t('projects.project2.detail.participatingInTheDesignProcess')}}
+          {{ $t("projects.project2.detail.participatingInTheDesignProcess") }}
         </div>
         <div>
-          {{$t('projects.project2.detail.byIntegratingWorkflowOrchestrationCollaboration')}}
+          {{
+            $t(
+              "projects.project2.detail.byIntegratingWorkflowOrchestrationCollaboration",
+            )
+          }}
         </div>
         <div>
-          {{$t('projects.project2.detail.thisProjectHasFurtherConvinced')}}
+          {{ $t("projects.project2.detail.thisProjectHasFurtherConvinced") }}
         </div>
         <div>
-          {{$t('projects.project2.detail.iAlsoLookForwardTo')}}
+          {{ $t("projects.project2.detail.iAlsoLookForwardTo") }}
         </div>
       </div>
     </CardSection>

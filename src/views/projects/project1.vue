@@ -244,21 +244,20 @@ onUnmounted(() => {
       :videoSrc="toolingMp4"
       rightClass="lg:-mt-[120px]"
     >
-      {{ $t("projects.project1.detail.toEnableAiToTrulyExecute") }}
-      <br />
-      <ul>
-        <li>
-          {{ $t("projects.project1.detail.fileProcessingAndManagement") }}
-        </li>
-        <li>{{ $t("projects.project1.detail.dataOperations") }}</li>
-        <li>
-          {{ $t("projects.project1.detail.thirdPartySystemIntegration") }}
-        </li>
-      </ul>
-      <br />
-      {{ $t("projects.project1.detail.theDesignFocusIsOn") }}
-      <br />
-      {{ $t("projects.project1.detail.throughModularDesignAiCan") }}
+      <div class="flex flex-col gap-4">
+        {{ $t("projects.project1.detail.toEnableAiToTrulyExecute") }}
+        <br />
+        <ul>
+          <li>
+            {{ $t("projects.project1.detail.fileProcessingAndManagement") }}
+          </li>
+          <li>{{ $t("projects.project1.detail.dataOperations") }}</li>
+          <li>
+            {{ $t("projects.project1.detail.thirdPartySystemIntegration") }}
+          </li>
+        </ul>
+        {{ $t("projects.project1.detail.theDesignFocusIsOn") }}
+      </div>
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.humanInTheLoop')"
@@ -378,7 +377,6 @@ onUnmounted(() => {
       <p>
         {{ $t("projects.project1.detail.aiDrivesWorkflowExecutionOutside") }}
       </p>
-      <br />
       <div class="mt-10 grid grid-flow-col gap-4">
         <ColorBox
           :radius="6"
@@ -433,7 +431,8 @@ onUnmounted(() => {
       :title="$t('projects.project1.detail.systemFeedbackAndTransparency')"
       :desc="$t('projects.project1.detail.makingAiBehaviorVisibleAnd')"
       :imgSrc="responsePng"
-      main-with="30%"
+      :imgBorder="false"
+      main-with="40%"
     >
       <div class="flex flex-col gap-4">
         <div>{{ $t("projects.project1.detail.ai_1") }}</div>
@@ -575,7 +574,10 @@ onUnmounted(() => {
       main-with="100%"
     >
       <div class="flex items-center gap-[10px] mb-[10px]">
-        <IconMiaozhun />{{ $t("projects.project1.detail.coreTakeaways") }}
+        <IconMiaozhun />
+        <div class="font-semibold">
+          {{ $t("projects.project1.detail.coreTakeaways") }}
+        </div>
       </div>
       <div class="card-container">
         <div class="card-block">
@@ -618,7 +620,10 @@ onUnmounted(() => {
 
       <div class="flex flex-col mt-10 text-sm gap-[10px]">
         <div class="flex items-center gap-[10px]">
-          <IconMiaozhun />{{ $t("projects.project1.detail.designShift") }}
+          <IconBook />
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.designShift") }}
+          </div>
         </div>
         <div>
           <ul>
@@ -636,7 +641,10 @@ onUnmounted(() => {
       </div>
       <div class="flex mt-10 text-sm flex-col gap-[10px]">
         <div class="flex items-center gap-[10px]">
-          <IconBook />{{ $t("projects.project1.detail.areasForImprovement") }}
+          <IconMessage />
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.areasForImprovement") }}
+          </div>
         </div>
         <div>
           <ul>
@@ -665,33 +673,6 @@ onUnmounted(() => {
         <span>{{
           $t("projects.project1.detail.theCollaborationModelBetweenHumans")
         }}</span>
-      </div>
-    </CardSection>
-    <CardSection
-      :title="$t('projects.project1.detail.systemFeedbackAndTransparency')"
-      :desc="$t('projects.project1.detail.makingAiBehaviorVisibleAnd')"
-      :videoSrc="humanInLoopMp4"
-      rightClass="lg:-mt-[40px]"
-    >
-      <div class="flex flex-col gap-4">
-        <div>
-          {{ $t("projects.project1.detail.ai_1") }}
-        </div>
-
-        {{ $t("projects.project1.detail.weNeedToBuildA") }}
-        <ul>
-          <li>
-            {{ $t("projects.project1.detail.statusVisualizationNotStartedIn") }}
-          </li>
-          <li>{{ $t("projects.project1.detail.clearPromptsAndNextSteps") }}</li>
-          <li>
-            {{
-              $t(
-                "projects.project1.detail.supportsMultiAgentStatusSynchronization",
-              )
-            }}
-          </li>
-        </ul>
       </div>
     </CardSection>
   </div>
