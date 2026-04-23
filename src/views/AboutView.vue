@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FlipNote from "./FlipNote.vue";
+
 const colors = [
   "rgb(184, 255, 198)",
   "rgb(255, 163, 163)",
@@ -154,16 +155,16 @@ const containerWidth = cardSize * 2 + columnGap;
 
 .note-wrapper {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   transition: transform 0.3s ease;
 }
 .my-avatar {
   border-radius: 100%;
   border: 3px solid var(--color-primary);
   overflow: hidden;
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   margin-top: 50px;
   margin-bottom: 40px;
 }

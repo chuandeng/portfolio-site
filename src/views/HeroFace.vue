@@ -9,6 +9,6 @@
 <style scoped>
 .hero-face-container {
   width: 400px;
-  height: 400px;
+  height: 300px;
 }
 </style>

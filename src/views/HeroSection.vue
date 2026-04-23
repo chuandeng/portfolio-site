@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+import "@lottiefiles/lottie-player";
+
 const { t } = useI18n();
+const arrowDownSrc = new URL("../assets/arrow-down.json", import.meta.url).href;
 </script>
 <template>
   <section class="justify-center flex flex-col items-center text-center">
-    <HeroFace class="w-400 h-400 rounded-full" />
+    <HeroFace class="w-400 h-300 rounded-full" />
     <div
-      class="tags-group effects flex flex-wrap gap-8 justify-center lg:justify-start mb-4"
+      class="tags-group effects flex flex-wrap gap-8 justify-center lg:justify-start mb-1"
     >
       <span class="hvr-grow-rotate tag-block">{{ t("hero.tag1") }}</span>
       <span class="hvr-grow-rotate tag-block">{{ t("hero.tag2") }}</span>
@@ -16,6 +19,15 @@ const { t } = useI18n();
       <h1 class="my-info">{{ t("hero.title") }}</h1>
       <p class="my-description">{{ t("hero.description") }}</p>
     </div>
+    <lottie-player
+      class="mt-20"
+      autoplay
+      loop
+      mode="normal"
+      :src="arrowDownSrc"
+      style="width: 20px"
+    >
+    </lottie-player>
   </section>
 </template>
 <style scoped>
