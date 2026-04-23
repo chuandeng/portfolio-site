@@ -26,20 +26,20 @@ const props = withDefaults(
       'show-bg': props.rightBg,
     }"
     :style="{
-      '--section-bg': `url(${props.rightBg})`,
+      '--section-bg': props.rightBg ? `url(${props.rightBg})` : '',
       '--section-bg-width': props.bgWidth,
     }"
   >
     <div
-      class="flex flex-col gap-2"
+      class="flex flex-col gap-1"
       :class="[props.titleClass ? props.titleClass : '']"
     >
       <h2 class="text-4xl font-semibold">{{ props.title }}</h2>
       <div v-if="props.desc" class="text-1xl pl-1">{{ props.desc }}</div>
     </div>
-    <div class="desc-container flex lg:flex-row max-lg:flex-col mt-10 gap-5">
+    <div class="desc-container flex lg:flex-row max-lg:flex-col mt-8 gap-5">
       <div
-        class="desc-info text-base"
+        class="desc-info text-sm"
         :style="{
           width: props.mainWith,
         }"
@@ -124,12 +124,10 @@ const props = withDefaults(
 .video-container {
   flex-shrink: 0;
 
-  max-width: 450px;
   height: auto;
   > video {
     border-radius: 5px;
     display: block;
-    width: auto;
     max-height: 648px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);

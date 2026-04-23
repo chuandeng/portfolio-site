@@ -44,32 +44,46 @@ onUnmounted(() => {
       :title="$t('projects.project1.detail.backgroundAndDesignGoals')"
       :desc="$t('projects.project1.detail.designingForBothAutomationAnd')"
       :videoSrc="moxoAiMp4"
-      main-with="40%"
-      rightClass="lg:-mt-[100px]"
+      main-with="50%"
+      right-class="w-sm"
     >
-      {{$t('projects.project1.detail.inEnterpriseCollaborationBusinessProcesses')}}<br />
-      {{$t('projects.project1.detail.relyingHeavilyOnManualOperations')}}<br />
+      {{
+        $t(
+          "projects.project1.detail.inEnterpriseCollaborationBusinessProcesses",
+        )
+      }}<br />
+      {{ $t("projects.project1.detail.relyingHeavilyOnManualOperations")
+      }}<br />
       <br />
-      {{$t('projects.project1.detail.althoughGenerativeAiHasPowerful')}}<br />
-      {{$t('projects.project1.detail.aToolRatherThanA')}}<br />
+      {{ $t("projects.project1.detail.althoughGenerativeAiHasPowerful") }}<br />
+      {{ $t("projects.project1.detail.aToolRatherThanA") }}<br />
       <br />
-      {{$t('projects.project1.detail.weNeedToBuildAn')}}<br />
-      {{$t('projects.project1.detail.allowingAiToTransitionFrom')}}<span>{{$t('projects.project1.detail.auxiliaryTool')}}</span>{{$t('projects.project1.detail.to')}}<span>{{$t('projects.project1.detail.processExecutor')}}</span>，<br />
-      {{$t('projects.project1.detail.whileEnsuringThatKeyDecisions')}}
+      {{ $t("projects.project1.detail.weNeedToBuildAn") }}<br />
+      {{
+        $t("projects.project1.detail.allowingAiToTransitionFrom")
+      }}&nbsp;<span> {{ $t("projects.project1.detail.auxiliaryTool") }}</span
+      >&nbsp;{{ $t("projects.project1.detail.to") }}&nbsp;<span>
+        {{ $t("projects.project1.detail.processExecutor") }}</span
+      >，<br />
+      {{ $t("projects.project1.detail.whileEnsuringThatKeyDecisions") }}
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.opportunity')"
       :desc="$t('projects.project1.detail.fromAiToolsToAi')"
       main-with="100%"
     >
-      {{$t('projects.project1.detail.theDesignOpportunityLiesNot')}}<br />
+      {{ $t("projects.project1.detail.theDesignOpportunityLiesNot") }}<br />
       <br />
-      <br />
+
       <ul>
-        <li>{{$t('projects.project1.detail.aiCopilotTheInteractionGateway')}}</li>
-        <li>{{$t('projects.project1.detail.multiAgentSystemAiUnits')}}</li>
-        <li>{{$t('projects.project1.detail.toolingTheActualCapabilitiesThat')}}</li>
-        <li>{{$t('projects.project1.detail.humanInTheLoopThe')}}</li>
+        <li>
+          {{ $t("projects.project1.detail.aiCopilotTheInteractionGateway") }}
+        </li>
+        <li>{{ $t("projects.project1.detail.multiAgentSystemAiUnits") }}</li>
+        <li>
+          {{ $t("projects.project1.detail.toolingTheActualCapabilitiesThat") }}
+        </li>
+        <li>{{ $t("projects.project1.detail.humanInTheLoopThe") }}</li>
       </ul>
       <br />
       <img src="@/assets/opportunity.png" />
@@ -83,36 +97,58 @@ onUnmounted(() => {
         <div class="card-block">
           <img src="@/assets/card1.png" />
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.proactivePreparation')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.proactivePreparation") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiAutomaticallyCompletesInformationCollection')}}
+              {{
+                $t(
+                  "projects.project1.detail.aiAutomaticallyCompletesInformationCollection",
+                )
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card2.png" />
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.earlyProblemDetection')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.earlyProblemDetection") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiInstantlyChecksCompletenessAccuracy')}}
+              {{
+                $t(
+                  "projects.project1.detail.aiInstantlyChecksCompletenessAccuracy",
+                )
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card3.png" />
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.automaticTaskRouting')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.automaticTaskRouting") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiAutomaticallyAssignsTasksBased')}}
+              {{
+                $t("projects.project1.detail.aiAutomaticallyAssignsTasksBased")
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <img src="@/assets/card5.png" />
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.preventingWorkflowBlockages')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.preventingWorkflowBlockages") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiContinuouslyMonitorsWorkflowStatus')}}
+              {{
+                $t(
+                  "projects.project1.detail.aiContinuouslyMonitorsWorkflowStatus",
+                )
+              }}
             </div>
           </div>
         </div>
@@ -122,18 +158,28 @@ onUnmounted(() => {
       :title="$t('projects.project1.detail.aiCopilot')"
       :desc="$t('projects.project1.detail.bringingAiIntoTheFlow')"
       :videoSrc="aiCopilotMp4"
-      rightClass="width-max "
+      rightClass="w-lg"
       main-with="40%"
     >
-      {{$t('projects.project1.detail.aiCopilotIsDesignedAs')}}
-      <br />
-      <br />
-      {{$t('projects.project1.detail.designFocusesInclude')}}
-      <ul>
-        <li>{{$t('projects.project1.detail.embeddingAiNaturallyIntoWorkflows')}}</li>
-        <li>{{$t('projects.project1.detail.reducingUserInputCostsBased')}}</li>
-        <li>{{$t('projects.project1.detail.providingClearFeedbackToMake')}}</li>
-      </ul>
+      <div class="mt-1">
+        {{ $t("projects.project1.detail.aiCopilotIsDesignedAs") }}
+        <br />
+        <br />
+        {{ $t("projects.project1.detail.designFocusesInclude") }}
+        <ul>
+          <li>
+            {{
+              $t("projects.project1.detail.embeddingAiNaturallyIntoWorkflows")
+            }}
+          </li>
+          <li>
+            {{ $t("projects.project1.detail.reducingUserInputCostsBased") }}
+          </li>
+          <li>
+            {{ $t("projects.project1.detail.providingClearFeedbackToMake") }}
+          </li>
+        </ul>
+      </div>
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.multiAgentSystem')"
@@ -142,24 +188,55 @@ onUnmounted(() => {
       rightClass="width-max"
       main-with="50%"
     >
-      {{$t('projects.project1.detail.toSupportComplexBusinessScenarios')}}
-      <br />
-      <br />
-      {{$t('projects.project1.detail.actionAgentsExecuteSpecificTasks')}}
-      <ul>
-        <li>{{$t('projects.project1.detail.automationAgent')}}</li>
-        <li>{{$t('projects.project1.detail.customAgent')}}</li>
-      </ul>
-
-      {{$t('projects.project1.detail.assistAgents')}}<br />
-      {{$t('projects.project1.detail.summarizeInformationProvideSuggestionsAnd')}}
-      <ul>
-        <li>{{$t('projects.project1.detail.reviewAgentAssessesResultQuality')}}</li>
-        <li>{{$t('projects.project1.detail.adviceAgentProvidesDecisionRecommendations')}}</li>
-        <li>{{$t('projects.project1.detail.prepareAgentCompletesInformationPre')}}</li>
-      </ul>
-      <br />
-      {{$t('projects.project1.detail.throughModularDesignAiCan')}}
+      <div class="flex flex-col gap-4">
+        <div>
+          {{ $t("projects.project1.detail.toSupportComplexBusinessScenarios") }}
+        </div>
+        <div>
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.actionAgents") }}
+          </div>
+          {{ $t("projects.project1.detail.actionAgentsExecuteSpecificTasks") }}
+          <ul>
+            <li>{{ $t("projects.project1.detail.automationAgent") }}</li>
+            <li>{{ $t("projects.project1.detail.customAgent") }}</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.assistAgents") }}<br />
+          </div>
+          {{
+            $t(
+              "projects.project1.detail.summarizeInformationProvideSuggestionsAnd",
+            )
+          }}
+          <ul>
+            <li>
+              {{
+                $t("projects.project1.detail.reviewAgentAssessesResultQuality")
+              }}
+            </li>
+            <li>
+              {{
+                $t(
+                  "projects.project1.detail.adviceAgentProvidesDecisionRecommendations",
+                )
+              }}
+            </li>
+            <li>
+              {{
+                $t(
+                  "projects.project1.detail.prepareAgentCompletesInformationPre",
+                )
+              }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          {{ $t("projects.project1.detail.throughModularDesignAiCan") }}
+        </div>
+      </div>
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.tooling')"
@@ -167,17 +244,21 @@ onUnmounted(() => {
       :videoSrc="toolingMp4"
       rightClass="lg:-mt-[120px]"
     >
-      {{$t('projects.project1.detail.toEnableAiToTrulyExecute')}}
+      {{ $t("projects.project1.detail.toEnableAiToTrulyExecute") }}
       <br />
       <ul>
-        <li>{{$t('projects.project1.detail.fileProcessingAndManagement')}}</li>
-        <li>{{$t('projects.project1.detail.dataOperations')}}</li>
-        <li>{{$t('projects.project1.detail.thirdPartySystemIntegration')}}</li>
+        <li>
+          {{ $t("projects.project1.detail.fileProcessingAndManagement") }}
+        </li>
+        <li>{{ $t("projects.project1.detail.dataOperations") }}</li>
+        <li>
+          {{ $t("projects.project1.detail.thirdPartySystemIntegration") }}
+        </li>
       </ul>
       <br />
-      {{$t('projects.project1.detail.theDesignFocusIsOn')}}
+      {{ $t("projects.project1.detail.theDesignFocusIsOn") }}
       <br />
-      {{$t('projects.project1.detail.throughModularDesignAiCan')}}
+      {{ $t("projects.project1.detail.throughModularDesignAiCan") }}
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.humanInTheLoop')"
@@ -185,79 +266,102 @@ onUnmounted(() => {
       :videoSrc="humanInLoopMp4"
       rightClass="lg:-mt-[120px]"
     >
-      {{$t('projects.project1.detail.introducingHumanInTheLoop')}}
-      <br />
-      {{$t('projects.project1.detail.supportsMultipleTriggerMethods')}}
-      <ul>
-        <li>{{$t('projects.project1.detail.basedOnConfidenceLevel')}}</li>
-        <li>{{$t('projects.project1.detail.basedOnRuleConditions')}}</li>
-        <li>{{$t('projects.project1.detail.mandatoryHumanReview')}}</li>
-      </ul>
+      <div class="flex flex-col gap-4">
+        <div>
+          {{ $t("projects.project1.detail.introducingHumanInTheLoop") }}
+        </div>
+        {{ $t("projects.project1.detail.supportsMultipleTriggerMethods") }}
+        <ul>
+          <li>{{ $t("projects.project1.detail.basedOnConfidenceLevel") }}</li>
+          <li>{{ $t("projects.project1.detail.basedOnRuleConditions") }}</li>
+          <li>{{ $t("projects.project1.detail.mandatoryHumanReview") }}</li>
+        </ul>
 
-      {{$t('projects.project1.detail.thisDesignImprovesEfficiencyWhile')}}
+        {{ $t("projects.project1.detail.thisDesignImprovesEfficiencyWhile") }}
+      </div>
     </CardSection>
     <CardSection
       :title="$t('projects.project1.detail.humanAccountabilityByDesign')"
       :desc="$t('projects.project1.detail.humanAccountabilityByDesign_1')"
       main-with="100%"
     >
-      {{$t('projects.project1.detail.moxoDesignIsBasedOnA')}}
+      {{ $t("projects.project1.detail.moxoDesignIsBasedOnA") }}
       <br />
-      <div class="mt-10 card-container">
+      <div class="mt-10 grid grid-cols-2 gap-4 board-box">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.humansMakeDecisions')}}</div>
-            <div class="card-info">{{$t('projects.project1.detail.aiPushesWorkflowsForwardBut')}}</div>
-          </div>
-        </div>
-        <div class="card-block">
-          <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.aiPreprocessingActions')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.humansMakeDecisions") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.allTasksArePreparedVerified')}}
+              {{ $t("projects.project1.detail.aiPushesWorkflowsForwardBut") }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.roleBasedGovernanceMechanism')}}</div>
-            <div class="card-info">{{$t('projects.project1.detail.aiAgentsOnlyOperateWithin')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.aiPreprocessingActions") }}
+            </div>
+            <div class="card-info">
+              {{ $t("projects.project1.detail.allTasksArePreparedVerified") }}
+            </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.efficiencyAndControlCoexist')}}</div>
-            <div class="card-info">{{$t('projects.project1.detail.aiImprovesWorkflowEfficiencyWhile')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.roleBasedGovernanceMechanism") }}
+            </div>
+            <div class="card-info">
+              {{ $t("projects.project1.detail.aiAgentsOnlyOperateWithin") }}
+            </div>
+          </div>
+        </div>
+        <div class="card-block">
+          <div class="card-body">
+            <div class="card-title">
+              {{ $t("projects.project1.detail.efficiencyAndControlCoexist") }}
+            </div>
+            <div class="card-info">
+              {{
+                $t("projects.project1.detail.aiImprovesWorkflowEfficiencyWhile")
+              }}
+            </div>
           </div>
         </div>
       </div>
-      <div class="mt-8 text-xl font-bold">{{$t('projects.project1.detail.aiExecutesHumansDecide')}}</div>
-      <div class="flex m-1 mb-2">
-        <div>{{$t('projects.project1.detail.aiAgentsPrepareExecuteVerify')}}</div>
+      <div class="mt-8 font-bold">
+        {{ $t("projects.project1.detail.aiExecutesHumansDecide") }}
+      </div>
+      <div class="flex m-1 mb-2 items-center">
+        <div>
+          {{ $t("projects.project1.detail.aiAgentsPrepareExecuteVerify") }}
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
         >
           <path
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
           ></path>
         </svg>
-        <div>{{$t('projects.project1.detail.humanDecisionLayer')}}</div>
+        <div>{{ $t("projects.project1.detail.humanDecisionLayer") }}</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
         >
           <path
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
           ></path>
         </svg>
-        <div>{{$t('projects.project1.detail.finalResult')}}</div>
+        <div>{{ $t("projects.project1.detail.finalResult") }}</div>
       </div>
     </CardSection>
     <CardSection
@@ -265,40 +369,75 @@ onUnmounted(() => {
       :desc="$t('projects.project1.detail.aiThatAdaptsToYour')"
       main-with="100%"
     >
-      <p>{{$t('projects.project1.detail.moxoAiIsNotA')}}</p>
-      <p>{{$t('projects.project1.detail.includingWorkflowsRolesPermissionsRules')}}</p>
-      <p>{{$t('projects.project1.detail.aiDrivesWorkflowExecutionOutside')}}</p>
+      <p>{{ $t("projects.project1.detail.moxoAiIsNotA") }}</p>
+      <p>
+        {{
+          $t("projects.project1.detail.includingWorkflowsRolesPermissionsRules")
+        }}
+      </p>
+      <p>
+        {{ $t("projects.project1.detail.aiDrivesWorkflowExecutionOutside") }}
+      </p>
       <br />
       <div class="mt-10 card-container">
-        <div class="card-block border-box">
+        <ColorBox
+          :radius="6"
+          class="p-4 text-sm"
+          color-from="#FD9DB3"
+          color-to="#E399FC"
+        >
           <img src="@/assets/flow_img_1.svg" class="card-icon" />
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.understandingBusinessProcesses')}}</div>
+            <div class="card-title">
+              {{
+                $t("projects.project1.detail.understandingBusinessProcesses")
+              }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiLearnsWorkflowStepsRole')}}
+              {{ $t("projects.project1.detail.aiLearnsWorkflowStepsRole") }}
             </div>
           </div>
-        </div>
-        <div class="card-block border-box">
+        </ColorBox>
+        <ColorBox
+          :radius="6"
+          class="p-4 text-sm"
+          color-from="#E399FC"
+          color-to="#9EA1FD"
+        >
           <img src="@/assets/flow_img_2.svg" class="card-icon" />
 
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.followingRulesAndPermissions')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.followingRulesAndPermissions") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.agentsAlwaysAdhereToPermission')}}
+              {{
+                $t("projects.project1.detail.agentsAlwaysAdhereToPermission")
+              }}
             </div>
           </div>
-        </div>
-        <div class="card-block border-box">
+        </ColorBox>
+        <ColorBox
+          :radius="6"
+          class="p-4 text-sm"
+          color-to="#9EA1FD"
+          color-from="#9AE5FC"
+        >
           <img src="@/assets/flow_img_3.svg" class="card-icon" />
 
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.knowingWhenToExecuteAnd')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.knowingWhenToExecuteAnd") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiAutomaticallyAdvancesStandardWorkflows')}}
+              {{
+                $t(
+                  "projects.project1.detail.aiAutomaticallyAdvancesStandardWorkflows",
+                )
+              }}
             </div>
           </div>
-        </div>
+        </ColorBox>
       </div>
     </CardSection>
     <CardSection
@@ -308,26 +447,41 @@ onUnmounted(() => {
       main-with="30%"
     >
       <div class="flex flex-col gap-4">
-        <div>{{$t('projects.project1.detail.ai_1')}}</div>
+        <div>{{ $t("projects.project1.detail.ai_1") }}</div>
         <div>
-          {{$t('projects.project1.detail.weNeedToBuildA')}}
+          {{ $t("projects.project1.detail.weNeedToBuildA") }}
           <ul>
-            <li>{{$t('projects.project1.detail.statusVisualizationNotStartedIn')}}</li>
-            <li>{{$t('projects.project1.detail.clearPromptsAndNextSteps')}}</li>
-            <li>{{$t('projects.project1.detail.supportsMultiAgentStatusSynchronization')}}</li>
+            <li>
+              {{
+                $t("projects.project1.detail.statusVisualizationNotStartedIn")
+              }}
+            </li>
+            <li>
+              {{ $t("projects.project1.detail.clearPromptsAndNextSteps") }}
+            </li>
+            <li>
+              {{
+                $t(
+                  "projects.project1.detail.supportsMultiAgentStatusSynchronization",
+                )
+              }}
+            </li>
           </ul>
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project1.detail.liveWorkflow')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project1.detail.liveWorkflow')"
+      main-with="100%"
+    >
       <div class="desc-info">
-        {{$t('projects.project1.detail.aiAgentCollaboratesWithHumans')}}
+        {{ $t("projects.project1.detail.aiAgentCollaboratesWithHumans") }}
         <br />
       </div>
       <div class="w-fit mt-10">
         <video width="100%" loop muted playsinline>
           <source :src="liveWorkflowMp4" type="video/mp4" />
-          {{$t('projects.project1.detail.yourBrowserDoesNotSupport')}}
+          {{ $t("projects.project1.detail.yourBrowserDoesNotSupport") }}
         </video>
       </div>
     </CardSection>
@@ -336,30 +490,44 @@ onUnmounted(() => {
       :desc="$t('projects.project1.detail.outcomesNotFeatures')"
       main-with="100%"
     >
-      {{$t('projects.project1.detail.moxoDesignIsBasedOnA')}}
+      {{ $t("projects.project1.detail.moxoDesignIsBasedOnA") }}
       <br />
       <div class="mt-10 card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.26xEfficiencyImprovement')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.26xEfficiencyImprovement") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.averageWorkflowCompletionSpeedImproved')}}
+              {{
+                $t(
+                  "projects.project1.detail.averageWorkflowCompletionSpeedImproved",
+                )
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.744WorkflowTasksCompletedAutomatically')}}</div>
+            <div class="card-title">
+              {{
+                $t(
+                  "projects.project1.detail.744WorkflowTasksCompletedAutomatically",
+                )
+              }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiAgentsHaveCompleted744')}}
+              {{ $t("projects.project1.detail.aiAgentsHaveCompleted744") }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.24To79ActiveWorkflows')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.24To79ActiveWorkflows") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.theNumberOfBusinessWorkflows')}}
+              {{ $t("projects.project1.detail.theNumberOfBusinessWorkflows") }}
             </div>
           </div>
         </div>
@@ -367,32 +535,48 @@ onUnmounted(() => {
       <div class="mt-10 card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.510NewBusinessLines')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.510NewBusinessLines") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.bringingNewOpportunitiesContinuouslyThrough')}}
+              {{
+                $t(
+                  "projects.project1.detail.bringingNewOpportunitiesContinuouslyThrough",
+                )
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.423ConversionRate')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.423ConversionRate") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.aiDrivenNaturalWorkflowConversion')}}
+              {{
+                $t("projects.project1.detail.aiDrivenNaturalWorkflowConversion")
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.51kTo375kWorkflowProcessing')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.51kTo375kWorkflowProcessing") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.theBusinessProcessingScaleSupported')}}
+              {{
+                $t(
+                  "projects.project1.detail.theBusinessProcessingScaleSupported",
+                )
+              }}
             </div>
           </div>
         </div>
       </div>
       <div class="flex mt-10 text-sm items-center justify-center">
         <div>
-          {{$t('projects.project1.detail.byDelegatingRepetitiveExecutionTo')}}
+          {{ $t("projects.project1.detail.byDelegatingRepetitiveExecutionTo") }}
         </div>
       </div>
     </CardSection>
@@ -402,30 +586,42 @@ onUnmounted(() => {
       main-with="100%"
     >
       <div class="flex items-center gap-[10px] mb-[10px]">
-        <IconMiaozhun />{{$t('projects.project1.detail.coreTakeaways')}}
+        <IconMiaozhun />{{ $t("projects.project1.detail.coreTakeaways") }}
       </div>
       <div class="card-container">
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.trustIsTheCoreOf')}}</div>
+            <div class="card-title">
+              {{ $t("projects.project1.detail.trustIsTheCoreOf") }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.whetherUsersAdoptAiDepends')}}
+              {{ $t("projects.project1.detail.whetherUsersAdoptAiDepends") }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.automationMustCoexistWithControl')}}</div>
+            <div class="card-title">
+              {{
+                $t("projects.project1.detail.automationMustCoexistWithControl")
+              }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.thePrerequisiteForEfficiencyGains')}}
+              {{
+                $t("projects.project1.detail.thePrerequisiteForEfficiencyGains")
+              }}
             </div>
           </div>
         </div>
         <div class="card-block">
           <div class="card-body">
-            <div class="card-title">{{$t('projects.project1.detail.explainabilityDeterminesUsability')}}</div>
+            <div class="card-title">
+              {{
+                $t("projects.project1.detail.explainabilityDeterminesUsability")
+              }}
+            </div>
             <div class="card-info">
-              {{$t('projects.project1.detail.onlyWhenAiBehaviorIs')}}
+              {{ $t("projects.project1.detail.onlyWhenAiBehaviorIs") }}
             </div>
           </div>
         </div>
@@ -433,29 +629,53 @@ onUnmounted(() => {
 
       <div class="flex flex-col mt-10 text-sm gap-[10px]">
         <div class="flex items-center gap-[10px]">
-          <IconMiaozhun />{{$t('projects.project1.detail.designShift')}}
+          <IconMiaozhun />{{ $t("projects.project1.detail.designShift") }}
         </div>
         <div>
           <ul>
-            <li>{{$t('projects.project1.detail.fromUserOperationsToSystem')}}</li>
-            <li>{{$t('projects.project1.detail.fromInterfaceDesignToWorkflow')}}</li>
-            <li>{{$t('projects.project1.detail.fromFeatureDesignToRules')}}</li>
+            <li>
+              {{ $t("projects.project1.detail.fromUserOperationsToSystem") }}
+            </li>
+            <li>
+              {{ $t("projects.project1.detail.fromInterfaceDesignToWorkflow") }}
+            </li>
+            <li>
+              {{ $t("projects.project1.detail.fromFeatureDesignToRules") }}
+            </li>
           </ul>
         </div>
       </div>
       <div class="flex mt-10 text-sm flex-col gap-[10px]">
-        <div class="flex items-center gap-[10px]"><IconBook />{{$t('projects.project1.detail.areasForImprovement')}}</div>
+        <div class="flex items-center gap-[10px]">
+          <IconBook />{{ $t("projects.project1.detail.areasForImprovement") }}
+        </div>
         <div>
           <ul>
-            <li>{{$t('projects.project1.detail.provideMoreIntuitiveWorkflowVisualization')}}</li>
-            <li>{{$t('projects.project1.detail.reduceLearningCostsForComplex')}}</li>
-            <li>{{$t('projects.project1.detail.introduceSmarterDefaultStrategiesTo')}}</li>
+            <li>
+              {{
+                $t(
+                  "projects.project1.detail.provideMoreIntuitiveWorkflowVisualization",
+                )
+              }}
+            </li>
+            <li>
+              {{ $t("projects.project1.detail.reduceLearningCostsForComplex") }}
+            </li>
+            <li>
+              {{
+                $t(
+                  "projects.project1.detail.introduceSmarterDefaultStrategiesTo",
+                )
+              }}
+            </li>
           </ul>
         </div>
       </div>
       <div class="flex mt-10 text-sm items-center justify-center">
         <IconStart></IconStart>
-        <span>{{$t('projects.project1.detail.theCollaborationModelBetweenHumans')}}</span>
+        <span>{{
+          $t("projects.project1.detail.theCollaborationModelBetweenHumans")
+        }}</span>
       </div>
     </CardSection>
     <CardSection
@@ -464,13 +684,21 @@ onUnmounted(() => {
       :videoSrc="humanInLoopMp4"
       rightClass="lg:-mt-[120px]"
     >
-      {{$t('projects.project1.detail.ai_1')}}
+      {{ $t("projects.project1.detail.ai_1") }}
       <br />
-      {{$t('projects.project1.detail.weNeedToBuildA')}}
+      {{ $t("projects.project1.detail.weNeedToBuildA") }}
       <ul>
-        <li>{{$t('projects.project1.detail.statusVisualizationNotStartedIn')}}</li>
-        <li>{{$t('projects.project1.detail.clearPromptsAndNextSteps')}}</li>
-        <li>{{$t('projects.project1.detail.supportsMultiAgentStatusSynchronization')}}</li>
+        <li>
+          {{ $t("projects.project1.detail.statusVisualizationNotStartedIn") }}
+        </li>
+        <li>{{ $t("projects.project1.detail.clearPromptsAndNextSteps") }}</li>
+        <li>
+          {{
+            $t(
+              "projects.project1.detail.supportsMultiAgentStatusSynchronization",
+            )
+          }}
+        </li>
       </ul>
     </CardSection>
   </div>
@@ -481,6 +709,20 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+.board-box {
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .card-info {
+    font-size: 14px;
+  }
+  .card-block {
+    border: 1px solid #b2b2b2;
+    padding: 10px 16px;
+    border-radius: 6px;
+  }
 }
 .card-container {
   display: flex;

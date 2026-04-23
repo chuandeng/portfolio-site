@@ -19,15 +19,16 @@ const props = withDefaults(
 );
 </script>
 <template>
-  <section class="glass-card bg-dot-small padding30">
-    <div class="project-title">
-      <img :src="props.logo" />
-      <div class="normal-text text-5xl">{{ props.title }}</div>
+  <section class="glass-card cover-card bg-dot-small padding30">
+    <div>
+      <div class="project-title mb-3">
+        <div class="normal-text text-5xl">{{ props.title }}</div>
+      </div>
+      <h1 class="normal-text text-4xl leading-12">
+        {{ props.desc }}
+      </h1>
     </div>
-    <h1 class="normal-text text-4xl">
-      {{ props.desc }}
-    </h1>
-    <div class="normal-text pt-20 text-info color-secondary">
+    <div class="normal-text text-info color-secondary">
       <div><b>Role: </b>{{ props.role }}</div>
       <div><b>Scope: </b>{{ props.scope }}</div>
       <div><b>Platform: </b>{{ props.platform }}</div>
