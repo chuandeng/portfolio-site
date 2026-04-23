@@ -379,63 +379,52 @@ onUnmounted(() => {
         {{ $t("projects.project1.detail.aiDrivesWorkflowExecutionOutside") }}
       </p>
       <br />
-      <div class="mt-10 card-container">
+      <div class="mt-10 grid grid-flow-col gap-4">
         <ColorBox
           :radius="6"
-          class="p-4 text-sm"
-          color-from="#FD9DB3"
-          color-to="#E399FC"
+          class="p-4 text-sm basic-1/3"
+          color-from="#F9DA38"
+          color-to="#9AE5FC"
         >
           <img src="@/assets/flow_img_1.svg" class="card-icon" />
-          <div class="card-body">
-            <div class="card-title">
-              {{
-                $t("projects.project1.detail.understandingBusinessProcesses")
-              }}
-            </div>
-            <div class="card-info">
-              {{ $t("projects.project1.detail.aiLearnsWorkflowStepsRole") }}
-            </div>
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.understandingBusinessProcesses") }}
+          </div>
+          <div class="card-info mt-2">
+            {{ $t("projects.project1.detail.aiLearnsWorkflowStepsRole") }}
           </div>
         </ColorBox>
         <ColorBox
           :radius="6"
-          class="p-4 text-sm"
-          color-from="#E399FC"
-          color-to="#9EA1FD"
+          class="p-4 text-sm basic-1/3"
+          color-from="#9AE5FC"
+          color-to="#E399FC"
         >
           <img src="@/assets/flow_img_2.svg" class="card-icon" />
 
-          <div class="card-body">
-            <div class="card-title">
-              {{ $t("projects.project1.detail.followingRulesAndPermissions") }}
-            </div>
-            <div class="card-info">
-              {{
-                $t("projects.project1.detail.agentsAlwaysAdhereToPermission")
-              }}
-            </div>
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.followingRulesAndPermissions") }}
+          </div>
+          <div class="card-info mt-2">
+            {{ $t("projects.project1.detail.agentsAlwaysAdhereToPermission") }}
           </div>
         </ColorBox>
         <ColorBox
           :radius="6"
-          class="p-4 text-sm"
-          color-to="#9EA1FD"
-          color-from="#9AE5FC"
+          class="p-4 text-sm basic-1/3"
+          color-to="#FD9DB3"
+          color-from="#E399FC"
         >
           <img src="@/assets/flow_img_3.svg" class="card-icon" />
-
-          <div class="card-body">
-            <div class="card-title">
-              {{ $t("projects.project1.detail.knowingWhenToExecuteAnd") }}
-            </div>
-            <div class="card-info">
-              {{
-                $t(
-                  "projects.project1.detail.aiAutomaticallyAdvancesStandardWorkflows",
-                )
-              }}
-            </div>
+          <div class="font-semibold">
+            {{ $t("projects.project1.detail.knowingWhenToExecuteAnd") }}
+          </div>
+          <div class="card-info mt-2">
+            {{
+              $t(
+                "projects.project1.detail.aiAutomaticallyAdvancesStandardWorkflows",
+              )
+            }}
           </div>
         </ColorBox>
       </div>
@@ -682,24 +671,28 @@ onUnmounted(() => {
       :title="$t('projects.project1.detail.systemFeedbackAndTransparency')"
       :desc="$t('projects.project1.detail.makingAiBehaviorVisibleAnd')"
       :videoSrc="humanInLoopMp4"
-      rightClass="lg:-mt-[120px]"
+      rightClass="lg:-mt-[40px]"
     >
-      {{ $t("projects.project1.detail.ai_1") }}
-      <br />
-      {{ $t("projects.project1.detail.weNeedToBuildA") }}
-      <ul>
-        <li>
-          {{ $t("projects.project1.detail.statusVisualizationNotStartedIn") }}
-        </li>
-        <li>{{ $t("projects.project1.detail.clearPromptsAndNextSteps") }}</li>
-        <li>
-          {{
-            $t(
-              "projects.project1.detail.supportsMultiAgentStatusSynchronization",
-            )
-          }}
-        </li>
-      </ul>
+      <div class="flex flex-col gap-4">
+        <div>
+          {{ $t("projects.project1.detail.ai_1") }}
+        </div>
+
+        {{ $t("projects.project1.detail.weNeedToBuildA") }}
+        <ul>
+          <li>
+            {{ $t("projects.project1.detail.statusVisualizationNotStartedIn") }}
+          </li>
+          <li>{{ $t("projects.project1.detail.clearPromptsAndNextSteps") }}</li>
+          <li>
+            {{
+              $t(
+                "projects.project1.detail.supportsMultiAgentStatusSynchronization",
+              )
+            }}
+          </li>
+        </ul>
+      </div>
     </CardSection>
   </div>
 </template>
@@ -753,7 +746,7 @@ onUnmounted(() => {
     }
   }
   .card-body {
-    padding: 20px 10px;
+    padding: 16px;
   }
 }
 h1 {
