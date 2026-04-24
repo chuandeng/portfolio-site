@@ -278,7 +278,7 @@ onUnmounted(() => {
           {{ $t("projects.project2.detail.throughAUnifiedWorkflowEngine") }}
         </div>
         <img src="@/assets/image-19.png" />
-        <div class="flex flex-row gap-4 v-line">
+        <div class="grid grid-cols-2 gap-5">
           <div>
             <div class="font-semibold">
               {{ $t("projects.project2.detail.aiDrivenExecution") }}
@@ -329,7 +329,6 @@ onUnmounted(() => {
       :desc="$t('projects.project2.detail.driveMeasurableOutcomes')"
       :img-src="project2Img1"
       main-with="40%"
-      right-class="lg:-mt-[80px]"
     >
       <p>
         {{ $t("projects.project2.detail.weAbstractBusinessProcessesInto") }}
@@ -343,7 +342,6 @@ onUnmounted(() => {
       :desc="$t('projects.project2.detail.workflowBuilder')"
       :img-src="project2Img2"
       main-with="40%"
-      right-class="lg:-mt-[80px]"
     >
       <div class="flex flex-col gap-4">
         <p>
@@ -540,7 +538,9 @@ onUnmounted(() => {
   margin: -60px 20px 0 20px;
   z-index: 1;
   position: relative;
+  height: 140px;
 }
+
 .green-box {
   background: linear-gradient(101.32deg, #ebffea 34.64%, #c7ffe0 100%);
 }
