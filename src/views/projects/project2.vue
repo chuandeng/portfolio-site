@@ -409,7 +409,7 @@ onUnmounted(() => {
         {{ $t("projects.project2.detail.thisProjectFocusesOnDesigning") }}
         <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
           <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
-            <IconCompute />
+            <IconCompute class="shrink-0" />
             <div>
               <h3 class="text-base">
                 {{
@@ -426,7 +426,7 @@ onUnmounted(() => {
             </div>
           </div>
           <div class="flex flex-row items-center gap-4 px-4 py-3 bg-white">
-            <IconPhone />
+            <IconPhone class="shrink-0" />
             <div>
               <h3 class="text-base/7">
                 {{
@@ -441,7 +441,7 @@ onUnmounted(() => {
             </div>
           </div>
           <div class="flex flex-row items-center gap-4 py-3 px-4 bg-white">
-            <IconEmbed />
+            <IconEmbed class="shrink-0" />
             <div>
               <h3 class="text-base/6">
                 {{

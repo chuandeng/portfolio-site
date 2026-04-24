@@ -46,7 +46,7 @@ onUnmounted(() => {
       :title="$t('projects.project3.detail.projectBackground')"
       :img-src="img1"
       main-with="55%"
-      right-class="w-2xs -mt-4"
+      right-class="w-2xs lg:-mt-4"
       :img-border="false"
     >
       <div class="flex flex-col gap-5">
@@ -113,9 +113,9 @@ onUnmounted(() => {
       :title="$t('projects.project3.detail.architectureDefinition')"
       :img-border="false"
       :img-src="project2Img2"
-      main-with="40%"
+      main-with="50%"
     >
-      <div class="flex flex-col gap-10">
+      <div class="flex flex-col gap-4">
         <div>
           {{ $t("projects.project3.detail.weStartedByReviewingExisting") }}
         </div>
@@ -161,7 +161,9 @@ onUnmounted(() => {
     <CardSection
       :title="$t('projects.project3.detail.validatingTheDesignSystemIn')"
       :right-bg="project2Bg1"
-      main-with="40%"
+      titleClass="w-md"
+      bg-width="40%"
+      main-with="50%"
     >
       <div class="flex gap-5 flex-col">
         <div>
@@ -272,7 +274,7 @@ onUnmounted(() => {
       main-with="100%"
     >
       <div class="flex flex-row gap-4">
-        <div class="flex flex-col w-1/2 gap-4">
+        <div class="flex flex-col w-2/3 gap-4">
           <div>
             {{ $t("projects.project3.detail.establishingATokenSystemIs") }}
           </div>
@@ -318,8 +320,8 @@ onUnmounted(() => {
             {{ $t("projects.project3.detail.beyondTheSystemDesignItself") }}
           </div>
         </div>
-        <div class="w-1/2 flex justify-center items-center">
-          <img :src="project2Img5" style="width: 332px; height: 280px" />
+        <div class="w-1/3 flex justify-center items-center">
+          <img :src="project2Img5" style="width: 268px; height: auto" />
         </div>
       </div>
     </CardSection>
