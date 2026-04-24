@@ -404,7 +404,6 @@ onUnmounted(() => {
       :title="$t('projects.project2.detail.multiTouchpointDeliveryCapability')"
       main-with="50%"
       :video-src="crossPlatformVideo"
-      right-class="lg:-mt-[80px]"
     >
       <div class="flex flex-col items-center">
         {{ $t("projects.project2.detail.thisProjectFocusesOnDesigning") }}
@@ -464,6 +463,7 @@ onUnmounted(() => {
       main-with="50%"
       :desc="$t('projects.project2.detail.designPrinciples')"
       :right-bg="project2Img6"
+      bgWidth="45%"
     >
       <div class="flex flex-col gap-8 mb-20">
         <div>
