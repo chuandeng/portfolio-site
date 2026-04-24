@@ -46,41 +46,52 @@ onUnmounted(() => {
       :img-src="backgroundImg"
       widthScale="2/5"
     >
-      {{ $t("projects.project2.detail.inEnterpriseServiceScenariosA") }}
-      <ul>
-        <li>{{ $t("projects.project2.detail.emailHandlesCommunication") }}</li>
-        <li>
-          {{
-            $t(
-              "projects.project2.detail.spreadsheetsHandleInformationCollection",
-            )
-          }}
-        </li>
-        <li>
-          {{ $t("projects.project2.detail.cloudDrivesHandleFileManagement") }}
-        </li>
-        <li>
-          {{
-            $t("projects.project2.detail.independentSystemsHandleApprovalAnd")
-          }}
-        </li>
-      </ul>
+      <div class="flex flex-col gap-4">
+        {{ $t("projects.project2.detail.inEnterpriseServiceScenariosA") }}
+        <div>{{ $t("projects.project2.detail.butInRealityWorkflows") }}</div>
+        <ul>
+          <li>
+            {{ $t("projects.project2.detail.emailHandlesCommunication") }}
+          </li>
+          <li>
+            {{
+              $t(
+                "projects.project2.detail.spreadsheetsHandleInformationCollection",
+              )
+            }}
+          </li>
+          <li>
+            {{ $t("projects.project2.detail.cloudDrivesHandleFileManagement") }}
+          </li>
+          <li>
+            {{
+              $t("projects.project2.detail.independentSystemsHandleApprovalAnd")
+            }}
+          </li>
+        </ul>
 
-      {{ $t("projects.project2.detail.thisResultsIn") }}
-      <ul>
-        <li>{{ $t("projects.project2.detail.lowCollaborationEfficiency") }}</li>
-        <li>{{ $t("projects.project2.detail.workflowStatusIsNotVisible") }}</li>
-        <li>
-          {{
-            $t("projects.project2.detail.complexClientParticipationExperience")
-          }}
-        </li>
-        <li>
-          {{ $t("projects.project2.detail.highlyDependentOnManualPushing") }}
-        </li>
-      </ul>
+        {{ $t("projects.project2.detail.thisResultsIn") }}
+        <ul>
+          <li>
+            {{ $t("projects.project2.detail.lowCollaborationEfficiency") }}
+          </li>
+          <li>
+            {{ $t("projects.project2.detail.workflowStatusIsNotVisible") }}
+          </li>
+          <li>
+            {{
+              $t(
+                "projects.project2.detail.complexClientParticipationExperience",
+              )
+            }}
+          </li>
+          <li>
+            {{ $t("projects.project2.detail.highlyDependentOnManualPushing") }}
+          </li>
+        </ul>
 
-      {{ $t("projects.project2.detail.theGoalOfTheProject") }}
+        {{ $t("projects.project2.detail.theGoalOfTheProject") }}
+      </div>
     </CardSection>
     <CardSection
       :title="$t('projects.project2.detail.designObjectives')"
@@ -90,7 +101,7 @@ onUnmounted(() => {
     >
       <div class="flex flex-col items-center">
         {{ $t("projects.project2.detail.thisProjectFocusesOnDesigning") }}
-        <div class="mt-5 icon-list flex flex-col gap-4 w-sm">
+        <div class="mt-5 icon-list flex flex-col gap-6 w-md">
           <div class="flex flex-row items-center gap-4">
             <img src="@/assets/list-icon1.png" />
             <div>
@@ -164,7 +175,7 @@ onUnmounted(() => {
         <div class="absolute float-left">
           <img src="@/assets/pt-left.png" />
         </div>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 w-md z-1">
           <div>
             {{
               $t(
@@ -252,7 +263,7 @@ onUnmounted(() => {
             <div class="text-gray-500">API / SDK / Integrations / Security</div>
           </ColorBox>
         </div>
-        <div class="absolute float-right">
+        <div class="absolute float-right z-0">
           <img src="@/assets/pt-right.png" />
         </div>
       </div>

@@ -6,9 +6,11 @@ import { useRoute } from "vue-router";
 const { t } = useI18n();
 const route = useRoute();
 
-const home = ref({
-  icon: "pi pi-home",
-  label: t("nav.home"),
+const home = computed(() => {
+  return {
+    icon: "pi pi-home",
+    label: t("nav.home"),
+  };
 });
 const items = computed(() => {
   return [
