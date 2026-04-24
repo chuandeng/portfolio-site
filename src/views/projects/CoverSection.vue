@@ -48,7 +48,6 @@ const props = withDefaults(
   }
   div {
     flex-grow: 1;
-    font-size: 60px;
     font-weight: 700;
   }
 }
