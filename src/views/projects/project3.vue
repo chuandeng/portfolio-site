@@ -45,54 +45,65 @@ onUnmounted(() => {
     <CardSection
       :title="$t('projects.project3.detail.projectBackground')"
       :img-src="img1"
-      main-with="40%"
-      right-class="w-sm"
+      main-with="55%"
+      right-class="w-2xs -mt-4"
       :img-border="false"
     >
-      <div class="flex flex-col gap-10">
+      <div class="flex flex-col gap-5">
         <div>
-          {{$t('projects.project3.detail.asTheProductScalesThe')}}
+          {{ $t("projects.project3.detail.asTheProductScalesThe") }}
         </div>
         <div>
-          {{$t('projects.project3.detail.whenIJoinedTheTeam')}}
-        </div>
-        <div>{{$t('projects.project3.detail.thisCreatedAnOpportunityTo')}}</div>
-        <div>
-          {{$t('projects.project3.detail.weAlreadyHaveTheBasic')}}
+          {{ $t("projects.project3.detail.whenIJoinedTheTeam") }}
         </div>
         <div>
-          {{$t('projects.project3.detail.myInitialGoalWasTo')}}
+          {{ $t("projects.project3.detail.thisCreatedAnOpportunityTo") }}
+        </div>
+        <div>
+          {{ $t("projects.project3.detail.weAlreadyHaveTheBasic") }}
+        </div>
+        <div>
+          {{ $t("projects.project3.detail.myInitialGoalWasTo") }}
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project3.detail.designPainPoints')" main-with="100%">
-      <div class="flex flex-col items-center">
-        <div class="mt-5 arrow-list flex flex-col gap-4 w-lg">
+    <CardSection
+      :title="$t('projects.project3.detail.designPainPoints')"
+      main-with="100%"
+    >
+      <div class="flex flex-col">
+        <div class="mt-5 arrow-list flex flex-col gap-4">
           <div class="flex flex-row items-start gap-4">
             <IconArrowRight class="shrink-0" />
             <div>
-              <h3 class="text-base font-semibold">{{$t('projects.project3.detail.inconsistentExperience')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project3.detail.thereIsNoSingleSource')}}</span
-              >
+              <h3 class="text-base font-semibold">
+                {{ $t("projects.project3.detail.inconsistentExperience") }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project3.detail.thereIsNoSingleSource")
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-start gap-4">
             <IconArrowRight class="shrink-0" />
             <div>
-              <h3 class="text-base font-semibold">{{$t('projects.project3.detail.highMaintenanceCosts')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project3.detail.colorsShadowsAndSpacingAre')}}</span
-              >
+              <h3 class="text-base font-semibold">
+                {{ $t("projects.project3.detail.highMaintenanceCosts") }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project3.detail.colorsShadowsAndSpacingAre")
+              }}</span>
             </div>
           </div>
           <div class="flex flex-row items-start gap-4 mb-30">
             <IconArrowRight class="shrink-0" />
             <div>
-              <h3 class="text-base font-semibold">{{$t('projects.project3.detail.manyCollaborationIssues')}}</h3>
-              <span class="text-sm text-gray-500"
-                >{{$t('projects.project3.detail.developersOftenHaveToGuess')}}</span
-              >
+              <h3 class="text-base font-semibold">
+                {{ $t("projects.project3.detail.manyCollaborationIssues") }}
+              </h3>
+              <span class="text-sm text-gray-500">{{
+                $t("projects.project3.detail.developersOftenHaveToGuess")
+              }}</span>
             </div>
           </div>
         </div>
@@ -106,38 +117,44 @@ onUnmounted(() => {
     >
       <div class="flex flex-col gap-10">
         <div>
-          {{$t('projects.project3.detail.weStartedByReviewingExisting')}}
+          {{ $t("projects.project3.detail.weStartedByReviewingExisting") }}
         </div>
         <div class="flex flex-row gap-4">
           <div>
-            <h3 class="text-base font-semibold">{{$t('projects.project3.detail.foundations')}}</h3>
-            <span class="text-sm text-gray-500"
-              >{{$t('projects.project3.detail.basicElementsSuchAsColors')}}</span
-            >
+            <h3 class="text-base font-semibold">
+              {{ $t("projects.project3.detail.foundations") }}
+            </h3>
+            <span class="text-sm text-gray-500">{{
+              $t("projects.project3.detail.basicElementsSuchAsColors")
+            }}</span>
           </div>
         </div>
         <div class="flex flex-row gap-4">
           <div>
             <h3 class="text-base font-semibold">
-              {{$t('projects.project3.detail.globalComponents')}}
+              {{ $t("projects.project3.detail.globalComponents") }}
             </h3>
-            <span class="text-sm text-gray-500"
-              >{{$t('projects.project3.detail.uiModulesReusedAcrossProjects')}}</span
-            >
+            <span class="text-sm text-gray-500">{{
+              $t("projects.project3.detail.uiModulesReusedAcrossProjects")
+            }}</span>
           </div>
         </div>
         <div class="flex flex-row gap-4">
           <div>
             <h3 class="text-base font-semibold">
-              {{$t('projects.project3.detail.projectSpecificComponents')}}
+              {{ $t("projects.project3.detail.projectSpecificComponents") }}
             </h3>
-            <span class="text-sm text-gray-500"
-              >{{$t('projects.project3.detail.experimentalModulesForSpecificBusiness')}}</span
-            >
+            <span class="text-sm text-gray-500">{{
+              $t(
+                "projects.project3.detail.experimentalModulesForSpecificBusiness",
+              )
+            }}</span>
           </div>
         </div>
         <div class="mb-10">
-          {{$t('projects.project3.detail.thisLayeredStructureMaintainsSystem')}}
+          {{
+            $t("projects.project3.detail.thisLayeredStructureMaintainsSystem")
+          }}
         </div>
       </div>
     </CardSection>
@@ -148,18 +165,28 @@ onUnmounted(() => {
     >
       <div class="flex gap-5 flex-col">
         <div>
-          {{$t('projects.project3.detail.theDesignSystemTrulyEntered')}}
+          {{ $t("projects.project3.detail.theDesignSystemTrulyEntered") }}
         </div>
         <div>
-          {{$t('projects.project3.detail.weQuicklyValidatedTheSystem')}}
+          {{ $t("projects.project3.detail.weQuicklyValidatedTheSystem") }}
           <ul class="list-disc pl-6">
-            <li>{{$t('projects.project3.detail.improveDeliveryEfficiency')}}</li>
-            <li>{{$t('projects.project3.detail.maintainCrossPageConsistency')}}</li>
-            <li>{{$t('projects.project3.detail.accelerateOldPageUpgrades')}}</li>
-            <li>{{$t('projects.project3.detail.reduceRepeatedDesignInvestment')}}</li>
+            <li>
+              {{ $t("projects.project3.detail.improveDeliveryEfficiency") }}
+            </li>
+            <li>
+              {{ $t("projects.project3.detail.maintainCrossPageConsistency") }}
+            </li>
+            <li>
+              {{ $t("projects.project3.detail.accelerateOldPageUpgrades") }}
+            </li>
+            <li>
+              {{
+                $t("projects.project3.detail.reduceRepeatedDesignInvestment")
+              }}
+            </li>
           </ul>
         </div>
-        <div>{{$t('projects.project3.detail.theValueOfTheSystem')}}</div>
+        <div>{{ $t("projects.project3.detail.theValueOfTheSystem") }}</div>
       </div>
     </CardSection>
     <CardSection
@@ -170,68 +197,94 @@ onUnmounted(() => {
     >
       <div class="flex flex-col gap-6">
         <div>
-          {{$t('projects.project3.detail.withTheReleaseOfFigma')}}
+          {{ $t("projects.project3.detail.withTheReleaseOfFigma") }}
         </div>
 
         <div class="gap-4">
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.singleSourceOfTruth')}}</h3>
-          <span class="text-sm text-gray-500"
-            >{{$t('projects.project3.detail.designAndDevelopmentShareA')}}</span
-          >
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.singleSourceOfTruth") }}
+          </h3>
+          <span class="text-sm text-gray-500">{{
+            $t("projects.project3.detail.designAndDevelopmentShareA")
+          }}</span>
         </div>
         <div class="gap-4">
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.improveEfficiency')}}</h3>
-          <span class="text-sm text-gray-500">{{$t('projects.project3.detail.theSpeedOfBuildingNew')}}</span>
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.improveEfficiency") }}
+          </h3>
+          <span class="text-sm text-gray-500">{{
+            $t("projects.project3.detail.theSpeedOfBuildingNew")
+          }}</span>
         </div>
         <div class="gap-4">
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.smootherCollaboration')}}</h3>
-          <span class="text-sm text-gray-500"
-            >{{$t('projects.project3.detail.reduceDesignAndCommunicationCosts')}}</span
-          >
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.smootherCollaboration") }}
+          </h3>
+          <span class="text-sm text-gray-500">{{
+            $t("projects.project3.detail.reduceDesignAndCommunicationCosts")
+          }}</span>
         </div>
         <div class="gap-4">
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.oneClickSwitchLightDark')}}</h3>
-          <span class="text-sm text-gray-500"
-            >{{$t('projects.project3.detail.themeSwitchingHasBeenUpgraded')}}</span
-          >
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.oneClickSwitchLightDark") }}
+          </h3>
+          <span class="text-sm text-gray-500">{{
+            $t("projects.project3.detail.themeSwitchingHasBeenUpgraded")
+          }}</span>
         </div>
         <div class="gap-4">
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.supportFutureBrandExpansion')}}</h3>
-          <span class="text-sm text-gray-500">{{$t('projects.project3.detail.reserveCapabilitiesForMultiClient')}}</span>
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.supportFutureBrandExpansion") }}
+          </h3>
+          <span class="text-sm text-gray-500">{{
+            $t("projects.project3.detail.reserveCapabilitiesForMultiClient")
+          }}</span>
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project3.detail.fromVariablesToTokenUnifying')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project3.detail.fromVariablesToTokenUnifying')"
+      main-with="100%"
+    >
       <div class="flex flex-col gap-6">
         <p>
-          {{$t('projects.project3.detail.designTokenIsAPractice')}}
+          {{ $t("projects.project3.detail.designTokenIsAPractice") }}
         </p>
 
         <p>
-          {{$t('projects.project3.detail.figmaVariablesAreASubset')}}
+          {{ $t("projects.project3.detail.figmaVariablesAreASubset") }}
         </p>
         <ul class="list-disc pl-6">
-          <li>{{$t('projects.project3.detail.designSideFigmaVariables')}}</li>
-          <li>{{$t('projects.project3.detail.codeSideCssTailwindVariables')}}</li>
-          <li>{{$t('projects.project3.detail.productionSideBuiltStylesheet')}}</li>
+          <li>{{ $t("projects.project3.detail.designSideFigmaVariables") }}</li>
+          <li>
+            {{ $t("projects.project3.detail.codeSideCssTailwindVariables") }}
+          </li>
+          <li>
+            {{ $t("projects.project3.detail.productionSideBuiltStylesheet") }}
+          </li>
         </ul>
 
         <img :src="project2Img4" />
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project3.detail.challengeGettingDevelopersToAdopt')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project3.detail.challengeGettingDevelopersToAdopt')"
+      main-with="100%"
+    >
       <div class="flex flex-row gap-4">
         <div class="flex flex-col w-1/2 gap-4">
           <div>
-            {{$t('projects.project3.detail.establishingATokenSystemIs')}}
+            {{ $t("projects.project3.detail.establishingATokenSystemIs") }}
           </div>
           <div>
-            {{$t('projects.project3.detail.ourSolution')}}
+            {{ $t("projects.project3.detail.ourSolution") }}
             <div class="text-base font-semibold">
-              {{$t('projects.project3.detail.establishMappingFromDesignTo')}}
+              {{ $t("projects.project3.detail.establishMappingFromDesignTo") }}
             </div>
             <div>
-              {{$t('projects.project3.detail.allowDesignVariablesToDirectly')}}
+              {{
+                $t("projects.project3.detail.allowDesignVariablesToDirectly")
+              }}
             </div>
             <div>
               Design Token <br />
@@ -240,17 +293,29 @@ onUnmounted(() => {
               <span class="text-blue-500">var(--mx-color.brand-primary)</span>
             </div>
           </div>
-          <div class="text-base font-semibold">{{$t('projects.project3.detail.establishDeliveryAndTrainingMechanisms')}}</div>
+          <div class="text-base font-semibold">
+            {{
+              $t(
+                "projects.project3.detail.establishDeliveryAndTrainingMechanisms",
+              )
+            }}
+          </div>
           <div>
-            {{$t('projects.project3.detail.organizeMeetingsBetweenDesignAnd')}}
+            {{
+              $t("projects.project3.detail.organizeMeetingsBetweenDesignAnd")
+            }}
             <ul class="list-disc pl-6">
-              <li>{{$t('projects.project3.detail.newTokenNamingRules')}}</li>
-              <li>{{$t('projects.project3.detail.componentUsageMethods')}}</li>
-              <li>{{$t('projects.project3.detail.howToAutomaticallySyncAfter')}}</li>
+              <li>{{ $t("projects.project3.detail.newTokenNamingRules") }}</li>
+              <li>
+                {{ $t("projects.project3.detail.componentUsageMethods") }}
+              </li>
+              <li>
+                {{ $t("projects.project3.detail.howToAutomaticallySyncAfter") }}
+              </li>
             </ul>
           </div>
           <div>
-            {{$t('projects.project3.detail.beyondTheSystemDesignItself')}}
+            {{ $t("projects.project3.detail.beyondTheSystemDesignItself") }}
           </div>
         </div>
         <div class="w-1/2 flex justify-center items-center">
@@ -258,33 +323,46 @@ onUnmounted(() => {
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project3.detail.accessibilityConsiderations')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project3.detail.accessibilityConsiderations')"
+      main-with="100%"
+    >
       <div class="flex flex-col items-start gap-6">
         <div>
-          {{$t('projects.project3.detail.weIntegrateAccessibilityDesignInto')}}
+          {{
+            $t("projects.project3.detail.weIntegrateAccessibilityDesignInto")
+          }}
         </div>
         <div class="flex flex-row gap-4 w-full">
           <div class="w-1/4">
-            <h3 class="text-base font-semibold">{{$t('projects.project3.detail.contrast')}}</h3>
+            <h3 class="text-base font-semibold">
+              {{ $t("projects.project3.detail.contrast") }}
+            </h3>
             <div>
               <ul class="list-disc pl-6">
-                <li>{{$t('projects.project3.detail.wcag21AaStandard')}}</li>
-                <li>{{$t('projects.project3.detail.normalText451')}}</li>
-                <li>{{$t('projects.project3.detail.largeText31')}}</li>
+                <li>{{ $t("projects.project3.detail.wcag21AaStandard") }}</li>
+                <li>{{ $t("projects.project3.detail.normalText451") }}</li>
+                <li>{{ $t("projects.project3.detail.largeText31") }}</li>
               </ul>
             </div>
           </div>
           <div class="w-1/4">
-            <h3 class="text-base font-semibold">{{$t('projects.project3.detail.navigation')}}</h3>
+            <h3 class="text-base font-semibold">
+              {{ $t("projects.project3.detail.navigation") }}
+            </h3>
             <div>
               <ul class="list-disc pl-6">
-                <li>{{$t('projects.project3.detail.focusableComponents')}}</li>
-                <li>{{$t('projects.project3.detail.skipLinkShortcuts')}}</li>
+                <li>
+                  {{ $t("projects.project3.detail.focusableComponents") }}
+                </li>
+                <li>{{ $t("projects.project3.detail.skipLinkShortcuts") }}</li>
               </ul>
             </div>
           </div>
           <div class="w-1/4">
-            <h3 class="text-base font-semibold">{{$t('projects.project3.detail.semanticLayerNaming')}}</h3>
+            <h3 class="text-base font-semibold">
+              {{ $t("projects.project3.detail.semanticLayerNaming") }}
+            </h3>
             <div class="tag-list">
               <code>&lt;header&gt;</code><br />
               <code>&lt;nav&gt;</code><br />
@@ -294,18 +372,22 @@ onUnmounted(() => {
             </div>
           </div>
           <div class="w-1/4">
-            <h3 class="text-base font-semibold">{{$t('projects.project3.detail.others')}}</h3>
+            <h3 class="text-base font-semibold">
+              {{ $t("projects.project3.detail.others") }}
+            </h3>
             <div>
               <ul class="list-disc pl-6">
-                <li>{{$t('projects.project3.detail.tooltips')}}</li>
-                <li>{{$t('projects.project3.detail.helpText')}}</li>
-                <li>{{$t('projects.project3.detail.labelsForForm')}}</li>
+                <li>{{ $t("projects.project3.detail.tooltips") }}</li>
+                <li>{{ $t("projects.project3.detail.helpText") }}</li>
+                <li>{{ $t("projects.project3.detail.labelsForForm") }}</li>
               </ul>
             </div>
           </div>
         </div>
         <div>
-          <h3 class="text-base font-semibold">{{$t('projects.project3.detail.toolsWeUseForAccessibility')}}</h3>
+          <h3 class="text-base font-semibold">
+            {{ $t("projects.project3.detail.toolsWeUseForAccessibility") }}
+          </h3>
           <div class="flex flex-row gap-4 mt-3">
             <img src="@/assets/soft.png" />
             <img src="@/assets/soft1.png" />
@@ -314,25 +396,46 @@ onUnmounted(() => {
         </div>
       </div>
     </CardSection>
-    <CardSection :title="$t('projects.project3.detail.projectResultsAndSummary')" main-with="100%">
+    <CardSection
+      :title="$t('projects.project3.detail.projectResultsAndSummary')"
+      main-with="100%"
+    >
       <div class="flex flex-row gap-8 mb-20">
         <div class="w-1/2 flex flex-col gap-4">
-          <p>{{$t('projects.project3.detail.afterIntroducingDesignTokensThe')}}</p>
+          <p>
+            {{ $t("projects.project3.detail.afterIntroducingDesignTokensThe") }}
+          </p>
           <div>
             <ul class="list-disc pl-6">
-              <li>{{$t('projects.project3.detail.designConsistencyImproved')}}</li>
-              <li>{{$t('projects.project3.detail.operationalEfficiencyImproved')}}</li>
-              <li>{{$t('projects.project3.detail.collaborationExperienceImproved')}}</li>
-              <li>{{$t('projects.project3.detail.futureGrowthScalability')}}</li>
-              <li>{{$t('projects.project3.detail.externalRecognition')}}</li>
+              <li>
+                {{ $t("projects.project3.detail.designConsistencyImproved") }}
+              </li>
+              <li>
+                {{
+                  $t("projects.project3.detail.operationalEfficiencyImproved")
+                }}
+              </li>
+              <li>
+                {{
+                  $t("projects.project3.detail.collaborationExperienceImproved")
+                }}
+              </li>
+              <li>
+                {{ $t("projects.project3.detail.futureGrowthScalability") }}
+              </li>
+              <li>{{ $t("projects.project3.detail.externalRecognition") }}</li>
             </ul>
           </div>
           <p>
-            {{$t('projects.project3.detail.theseResultsHighlightTheTransformative')}}
+            {{
+              $t(
+                "projects.project3.detail.theseResultsHighlightTheTransformative",
+              )
+            }}
           </p>
-          <p>{{$t('projects.project3.detail.leadingTheEvolutionOfThe')}}</p>
+          <p>{{ $t("projects.project3.detail.leadingTheEvolutionOfThe") }}</p>
           <p>
-            {{$t('projects.project3.detail.theValueOfADesign')}}
+            {{ $t("projects.project3.detail.theValueOfADesign") }}
           </p>
         </div>
         <div class="w-1/2 flex items-center justify-center">
