@@ -175,7 +175,7 @@ onUnmounted(() => {
         <div class="absolute float-left">
           <img src="@/assets/pt-left.png" />
         </div>
-        <div class="flex flex-col gap-2 w-md z-1">
+        <div class="flex flex-col gap-2 w-lg z-1">
           <div>
             {{
               $t(
