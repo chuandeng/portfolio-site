@@ -478,9 +478,7 @@ onUnmounted(() => {
       :desc="$t('projects.project1.detail.outcomesNotFeatures')"
       main-with="100%"
     >
-      {{ $t("projects.project1.detail.moxoDesignIsBasedOnA") }}
-      <br />
-      <div class="mt-10 card-container">
+      <div class=" card-container">
         <div class="card-block">
           <div class="card-body">
             <div class="card-title">
