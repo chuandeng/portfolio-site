@@ -51,11 +51,11 @@ onUnmounted(() => {
         $t(
           "projects.project1.detail.inEnterpriseCollaborationBusinessProcesses",
         )
-      }}<br />
+      }}
       {{ $t("projects.project1.detail.relyingHeavilyOnManualOperations")
       }}<br />
       <br />
-      {{ $t("projects.project1.detail.althoughGenerativeAiHasPowerful") }}<br />
+      {{ $t("projects.project1.detail.althoughGenerativeAiHasPowerful") }}
       {{ $t("projects.project1.detail.aToolRatherThanA") }}<br />
       <br />
       {{ $t("projects.project1.detail.weNeedToBuildAn") }}<br />
@@ -64,7 +64,7 @@ onUnmounted(() => {
       }}&nbsp;<span> {{ $t("projects.project1.detail.auxiliaryTool") }}</span
       >&nbsp;{{ $t("projects.project1.detail.to") }}&nbsp;<span>
         {{ $t("projects.project1.detail.processExecutor") }}</span
-      >，<br />
+      >,
       {{ $t("projects.project1.detail.whileEnsuringThatKeyDecisions") }}
     </CardSection>
     <CardSection
