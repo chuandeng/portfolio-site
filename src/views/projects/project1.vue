@@ -58,9 +58,7 @@ onUnmounted(() => {
       {{ $t("projects.project1.detail.althoughGenerativeAiHasPowerful") }}
       {{ $t("projects.project1.detail.aToolRatherThanA") }}<br />
       <br />
-      {{ $t("projects.project1.detail.weNeedToBuildAn") }}<br />
-      {{
-        $t("projects.project1.detail.allowingAiToTransitionFrom")
+      {{ $t("projects.project1.detail.weNeedToBuildAn") }}{{$t("projects.project1.detail.allowingAiToTransitionFrom")
       }}&nbsp;<span> {{ $t("projects.project1.detail.auxiliaryTool") }}</span
       >&nbsp;{{ $t("projects.project1.detail.to") }}&nbsp;<span>
         {{ $t("projects.project1.detail.processExecutor") }}</span

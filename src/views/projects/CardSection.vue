@@ -60,6 +60,7 @@ const props = withDefaults(
           v-if="props.videoSrc"
           loop
           muted
+          controls
           playsinline
           :class="props.rightClass ? props.rightClass : ''"
         >
