@@ -434,8 +434,9 @@ onUnmounted(() => {
     >
       <div class="flex flex-col gap-4">
         <div>{{ $t("projects.project1.detail.ai_1") }}</div>
-        <div>
-          {{ $t("projects.project1.detail.weNeedToBuildA") }}
+        <div class="flex flex-col gap-2">
+    
+          <div>{{ $t("projects.project1.detail.weNeedToBuildA") }}</div>
           <ul>
             <li>
               {{
