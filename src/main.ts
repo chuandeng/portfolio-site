@@ -11,7 +11,6 @@ import AnimateOnScroll from 'primevue/animateonscroll';
 
 const app = createApp(App)
 app.directive('animateonscroll', AnimateOnScroll);
-
 app.use(router)
 app.use(i18n)
 app.use(PrimeVue, {

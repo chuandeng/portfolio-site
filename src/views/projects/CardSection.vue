@@ -18,6 +18,14 @@ const props = withDefaults(
     bgWidth: "50%",
   },
 );
+
+const visible = ref(false)
+const previewImg = ref('')
+function showImg(src: string){
+  previewImg.value = src
+    visible.value = true
+
+}
 </script>
 <template>
   <section
@@ -30,6 +38,9 @@ const props = withDefaults(
       '--section-bg-width': props.bgWidth,
     }"
   >
+  <Dialog v-model:visible="visible" maximizable modal header=" " :style="{ width: '50rem' }" :breakpoints="{ '1199px': '75vw', '575px': '90vw' }">
+    <img :src="previewImg"/>
+</Dialog>
     <div
       class="flex flex-col gap-1"
       :class="[props.titleClass ? props.titleClass : '']"
@@ -69,6 +80,7 @@ const props = withDefaults(
         </video>
         <img
           v-if="props.imgSrc"
+          @click="showImg(props.imgSrc)"
           :src="props.imgSrc"
           :class="[
             props.rightClass ? props.rightClass : '',
